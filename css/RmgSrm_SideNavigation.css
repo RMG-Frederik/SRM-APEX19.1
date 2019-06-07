@@ -1,0 +1,47 @@
+/*Style the left side navigation*/
+
+.t-TreeNav .a-TreeView-node--topLevel .a-TreeView-row,
+.t-TreeNav .a-TreeView-node--topLevel>li {
+    border-bottom: 1px solid #c3c5cc;
+    font-family: 'Roboto Regular', 'Roboto';
+    text-align: left;
+}
+
+.js-navCollapsed .t-TreeNav .a-TreeView-node--topLevel>.a-TreeView-content .a-TreeView-label .a-TreeView-badge {
+    background-color: #971f15;
+    color: #ffffff;
+}
+
+.a-TreeView-badge {
+    float: left;
+    position: relative;
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4px;
+    background-color: #971f15;
+    box-sizing: border-box;
+    font-family: 'Roboto-Bold', 'Roboto Bold', 'Roboto';
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    line-height: normal;
+}
+
+t-TreeNav .a-TreeView-node--topLevel>.a-TreeView-content .fa {
+    vertical-align: top;
+    width: 24px;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    margin: 8px;
+    border-radius: 0rem;
+    text-align: center;
+}
+
+
+/*Style the left button header*/
+
+.t-Button.t-Button--header.is-active {
+    background-color: #2f3f4f;
+    box-shadow: none;
+}

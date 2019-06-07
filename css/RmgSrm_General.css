@@ -1,0 +1,250 @@
+/* 
+ * RMG-SRM
+ */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 0;
+}
+
+.t-Region .t-Region-body {
+    padding: 1.6rem;
+    background-color: #edeef4;
+}
+
+.t-Body-contentInner {
+    background-color: #edeef4;
+}
+
+.h1-eyecatcher {
+    font-family: 'Roboto Light', 'Roboto';
+    font-weight: 200;
+    font-size: 4.8rem;
+    color: #86868d;
+    text-align: left;
+    line-height: 5.4rem;
+}
+
+h1 {
+    font-family: 'Roboto Light', 'Roboto';
+    font-weight: 200;
+    font-size: 3.2rem;
+    color: #111423;
+    text-align: left;
+    line-height: 4rem;
+}
+
+h2 {
+    font-family: 'Roboto-Regular', 'Roboto';
+    font-size: 2.8rem;
+    color: #111423;
+    text-align: left;
+    line-height: 3.6rem;
+}
+
+h3 {
+    font-family: 'Roboto-Regular', 'Roboto';
+    font-size: 2.4rem;
+    color: #111423;
+    text-align: left;
+    line-height: 3.2rem;
+}
+
+h4 {
+    font-family: 'Roboto Medium', 'Roboto';
+    font-weight: 500;
+    font-size: 2rem;
+    color: #111423;
+    text-align: left;
+    line-height: 2.8rem;
+}
+
+h5 {
+    font-family: 'Roboto Medium', 'Roboto';
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #111423;
+    text-align: left;
+    line-height: 2.2rem;
+}
+
+p {
+    font-family: 'Roboto-Regular', 'Roboto';
+    font-size: 1.6rem;
+    color: #111423;
+    text-align: left;
+    line-height: 2.4rem;
+}
+
+.p-small {
+    font-family: 'Roboto-Regular', 'Roboto';
+    font-size: 1.4rem;
+    color: #111423;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.p-x-small {
+    font-family: 'Roboto-Regular', 'Roboto';
+    font-size: 1.2rem;
+    color: #111423;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.t-Body-title {
+    background-color: #fff;
+    border-bottom: 1px solid #c3c5cc;
+    color: #000000;
+    padding-left: 1.4rem;
+    padding-top: .1rem;
+}
+
+.t-Body-contentInner {
+    padding: 0rem;
+}
+
+.t-Breadcrumb-item .t-Icon:hover {
+    text-decoration: underline;
+}
+
+.t-Breadcrumb-item,
+.t-Breadcrumb-item a {
+    color: #435c74;
+}
+
+.t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item:last-child .t-Breadcrumb-label {
+    color: #000000;
+}
+
+.t-BreadcrumbRegion-titleText {
+    box-sizing: border-box;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #333333;
+    text-align: left;
+    line-height: 3.6rem;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.t-Breadcrumb-item.is-active {
+    color: #000000;
+}
+
+.t-Breadcrumb-item:after {
+    content: '\005C';
+    margin-left: .8rem;
+    margin-right: .6rem;
+    color: rgba(0, 0, 0, 0.9935);
+}
+
+.t-BreadcrumbRegion {
+    padding: .2rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.t-BreadcrumbRegion-body {
+    padding: .1rem;
+    vertical-align: bottom;
+}
+
+.t-BreadcrumbRegion-buttons {
+    vertical-align: middle;
+    padding: 0 1rem 0 0;
+}
+
+
+/* Region Display Selector Tabs */
+
+#tabs {
+    background-color: #edeef4!important;
+}
+
+.apex-rds,
+.t-Tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: hidden
+}
+
+.t-Body-info .apex-rds {
+    padding: 1.2rem 1.2rem 0
+}
+
+.apex-rds li,
+.t-Tabs-item {
+    padding: 0;
+    display: inline-block;
+    vertical-align: top
+}
+
+.apex-rds li .t-Icon,
+.t-Tabs-item .t-Icon {
+    display: none;
+    margin-right: .4rem
+}
+
+.apex-rds a,
+.t-Tabs-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem
+}
+
+.apex-rds a:focus,
+.t-Tabs-link:focus {
+    outline: 0;
+    z-index: 110;
+    position: relative
+}
+
+.apex-rds-item {
+    height: 5.6rem;
+    background-color: #edeef4;
+    box-sizing: border-box;
+    border-bottom: 1px solid #c3c5cc;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+}
+
+.apex-rds-item a {
+    height: 5.6rem;
+    background-color: #edeef4;
+    border-bottom: 1px solid #c3c5cc;
+    box-sizing: border-box;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+}
+
+.apex-rds-selected,
+ul.apex-rds li.apex-rds-selected {
+    height: 5.7rem;
+    border-bottom: .3rem solid #435c74;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: 'Roboto Regular', 'Roboto';
+    font-weight: bold;
+    color: #435c74;
+    text-align: center;
+    line-height: normal;
+}
+
+ul.apex-rds .apex-rds-selected a {
+    box-shadow: none!important
+}

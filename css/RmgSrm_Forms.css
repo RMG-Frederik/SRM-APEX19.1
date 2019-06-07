@@ -1,0 +1,49 @@
+body .ui-datepicker .ui-datepicker-buttonpane button:focus {
+    outline: none;
+    box-shadow: 0 0 0 .1rem #173348 inset, 0 0 1px 2px rgba(23, 51, 72, 0.25) !important;
+}
+
+body .ui-datepicker td span.ui-state-default,
+body .ui-datepicker td a.ui-state-default {
+    background-color: transparent;
+    color: #000;
+}
+
+body .ui-datepicker td span.ui-state-default.ui-state-active,
+body .ui-datepicker td a.ui-state-default.ui-state-active {
+    background-color: #173348;
+    color: #e6f0f7;
+    font-weight: bold;
+}
+
+body .ui-datepicker td span.ui-state-default.ui-state-active.ui-state-hover,
+body .ui-datepicker td a.ui-state-default.ui-state-active.ui-state-hover {
+    background-color: #173348 !important;
+}
+
+body .ui-datepicker td span.ui-state-default.ui-state-hover,
+body .ui-datepicker td a.ui-state-default.ui-state-hover {
+    background-color: #979799 !important;
+}
+
+body .ui-datepicker td span.ui-state-default:focus,
+body .ui-datepicker td a.ui-state-default:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #173348 inset, 0 0 1px 2px rgba(23, 51, 72, 0.25) !important;
+}
+
+body .ui-datepicker td span.ui-state-default.ui-state-highlight,
+body .ui-datepicker td a.ui-state-default.ui-state-highlight {
+    background-color: pink;
+}
+
+body .ui-datepicker th {
+    color: #bfbfbf;
+}
+
+body .ui-datepicker .ui-datepicker-header,
+body .ui-datepicker .ui-datepicker-buttonpane button,
+body .ui-datepicker .ui-datepicker-next,
+body .ui-datepicker .ui-datepicker-prev {
+    border-radius: .2rem;
+}
