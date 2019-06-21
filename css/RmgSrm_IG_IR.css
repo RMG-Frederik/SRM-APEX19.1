@@ -41,3 +41,28 @@
     text-transform: uppercase;
     line-height: 20px;
 }
+
+.t-Report-colHead {
+    background-color: #fff;
+    height: 48px;
+    box-sizing: border-box;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #696a72;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: 0px;
+}
+
+.t-Report-cell {
+    background-color: #fff;
+    height: 48px;
+    box-sizing: border-box;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #696a72;
+    line-height: 20px;
+    border: 0px;
+}
+
+.t-Report-colHead {
+    transition: background-color .2s;
+}

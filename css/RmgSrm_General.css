@@ -142,6 +142,13 @@ p {
     color: rgba(0, 0, 0, 0.9935);
 }
 
+.t-Breadcrumb-item.is-active:after {
+    content: ' ';
+    margin-left: .8rem;
+    margin-right: .6rem;
+    color: rgba(0, 0, 0, 0.9935);
+}
+
 .t-BreadcrumbRegion {
     padding: .2rem;
     display: flex;
@@ -210,22 +217,12 @@ p {
     position: relative
 }
 
-.apex-rds-item {
-    height: 5.6rem;
-    background-color: #edeef4;
-    box-sizing: border-box;
-    border-bottom: 1px solid #c3c5cc;
-    font-family: 'Roboto Regular', 'Roboto';
-    color: #333333;
-    text-align: center;
-    line-height: normal;
-}
-
+.apex-rds-item,
 .apex-rds-item a {
     height: 5.6rem;
     background-color: #edeef4;
-    border-bottom: 1px solid #c3c5cc;
     box-sizing: border-box;
+    border-bottom: 1px solid #c3c5cc;
     font-family: 'Roboto Regular', 'Roboto';
     color: #333333;
     text-align: center;
@@ -233,7 +230,7 @@ p {
 }
 
 .apex-rds-selected,
-ul.apex-rds li.apex-rds-selected {
+.apex-rds-selected a {
     height: 5.7rem;
     border-bottom: .3rem solid #435c74;
     background-color: #ffffff;
@@ -247,4 +244,19 @@ ul.apex-rds li.apex-rds-selected {
 
 ul.apex-rds .apex-rds-selected a {
     box-shadow: none!important
+}
+
+.apex-rds .apex-rds-selected span {
+    box-shadow: none;
+}
+
+.apex-rds-item--hint a span {
+    box-shadow: none;
+}
+
+.t-Region {
+    display: block;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 1rem;
 }
