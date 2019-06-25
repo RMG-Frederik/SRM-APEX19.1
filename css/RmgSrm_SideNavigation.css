@@ -35,3 +35,18 @@
     background-color: #2f3f4f;
     box-shadow: none;
 }
+
+.js-navCollapsed .t-TreeNav .a-TreeView-node--topLevel>.a-TreeView-content.is-hover .a-TreeView-label {
+    visibility: visible;
+    left: 48px;
+    padding: 0 16px;
+    width: auto;
+    background-color: #2f3f4f;
+    /* This would be your primary color */
+}
+
+.apex-side-nav.js-navCollapsed .t-Body-nav,
+.apex-side-nav.js-navCollapsed .t-Body-nav .t-TreeNav {
+    z-index: 999;
+    /* Make it appear on top of the page content */
+}

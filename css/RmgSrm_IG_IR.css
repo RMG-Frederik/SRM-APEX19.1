@@ -51,18 +51,52 @@
     text-transform: uppercase;
     line-height: 20px;
     border: 0px;
+    border-bottom: 3px solid #c3c5cc;
+}
+
+.t-Report-colHead a {
+    background-color: #fff;
+    height: 48px;
+    box-sizing: border-box;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #696a72;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: 0px;
 }
 
 .t-Report-cell {
-    background-color: #fff;
     height: 48px;
     box-sizing: border-box;
     font-family: 'Roboto Regular', 'Roboto';
     color: #696a72;
     line-height: 20px;
     border: 0px;
+    border-bottom: 1px solid #cdd0e1;
 }
 
 .t-Report-colHead {
     transition: background-color .2s;
+}
+
+.u-Report-sortIcon {
+    float: left;
+    margin-right: 2px;
+}
+
+.a-Icon.icon-ig-sort-desc:before,
+.a-Icon.icon-irr-sort-desc:before,
+.a-Icon.icon-rpt-sort-desc:before {
+    content: "\e123";
+}
+
+.a-Icon.icon-ig-sort-asc:before,
+.a-Icon.icon-irr-sort-asc:before,
+.a-Icon.icon-rpt-sort-asc:before {
+    content: "\e127";
+}
+
+.t-Report-report tr .t-Report-cell:last-child,
+.t-Report-report tr .t-Report-colHead:last-child {
+    border-right: 0px;
 }

@@ -11,6 +11,10 @@ body {
     margin: 0;
 }
 
+a {
+    color: #696a72;
+}
+
 .t-Region .t-Region-body {
     padding: 1.6rem;
     background-color: #edeef4;
