@@ -1,0 +1,1482 @@
+.a-IRR {
+    border: 1px solid
+}
+
+.a-IRR,
+.a-IRR-container {
+    position: relative
+}
+
+.a-IRR *,
+.a-IRR-sortWidget * {
+    box-sizing: border-box
+}
+
+.a-IRR-toolbar {
+    padding: 8px 8px 0;
+    border-bottom: 1px solid;
+    display: table;
+    width: 100%;
+    position: relative
+}
+
+.a-IRR-buttons,
+.a-IRR-controls {
+    display: table-cell;
+    vertical-align: top
+}
+
+.a-IRR-buttons {
+    text-align: right
+}
+
+.a-IRR-actions,
+.a-IRR-colSearch,
+.a-IRR-colSelector,
+.a-IRR-manage,
+.a-IRR-rowSelector,
+.a-IRR-savedReports,
+.a-IRR-search,
+.a-IRR-views {
+    display: inline-block;
+    vertical-align: top
+}
+
+.a-IRR-search {
+    margin-right: 4px
+}
+
+.a-IRR-search-field {
+    display: inline-block;
+    min-height: 30px;
+    height: 32px;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0
+}
+
+.a-IRR-search-field:focus {
+    outline: none
+}
+
+.a-IRR-button--search {
+    vertical-align: top
+}
+
+.a-IRR-colSearch:empty {
+    display: none
+}
+
+.a-IRR-views {
+    margin-right: 4px
+}
+
+.a-IRR-views .a-IRR-button {
+    border-radius: 0;
+    margin-right: -1px;
+    margin-left: 0!important
+}
+
+.a-IRR-views .a-IRR-button:first-child {
+    border-radius: 2px 0 0 2px
+}
+
+.a-IRR-views .a-IRR-button:last-child {
+    border-radius: 0 2px 2px 0;
+    margin-right: 0
+}
+
+.a-IRR-manage {
+    margin-left: 4px
+}
+
+.a-IRR-control-panel {
+    clear: both
+}
+
+.a-Button.a-IRR-button--actions.is-active,
+.a-Button.a-IRR-button--actions.is-active:active {
+    font-weight: 400
+}
+
+.a-IRR-rowSelector .a-IRR-selectList,
+.a-IRR-rowSelector label,
+.a-IRR-savedReports .a-IRR-selectList {
+    margin-right: 4px;
+    vertical-align: top
+}
+
+.a-IRR-rowSelector label {
+    display: inline-block;
+    line-height: 32px;
+    color: #404040
+}
+
+.a-IRR-selectList {
+    display: inline-block;
+    min-height: 30px;
+    height: 32px;
+    padding: 6px 36px 6px 6px;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 2px;
+    border: 1px solid;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: .01px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiPjxwYXRoIGZpbGw9IiNGMkYyRjIiIGQ9Ik0wIDBoMzJ2MzJoLTMyeiIvPjxwYXRoIGZpbGw9IiNEOUQ5RDkiIGQ9Ik0wIDBoMXYzMmgtMXoiLz48cGF0aCBmaWxsPSIjNjY2IiBkPSJNMjAuNSAxOC4yOTNjMCAuMTI4LS4wNDkuMjU2LS4xNDYuMzU0bC00LjM1NCA0LjM1My00LjM1NC00LjM1NGMtLjE5NS0uMTk1LS4xOTUtLjUxMiAwLS43MDdzLjUxMi0uMTk1LjcwNyAwbDMuNjQ3IDMuNjQ3IDMuNjQ2LTMuNjQ2Yy4xOTUtLjE5NS41MTItLjE5NS43MDcgMCAuMDk4LjA5Ny4xNDcuMjI1LjE0Ny4zNTN6TTExLjUgMTMuNzA3YzAtLjEyOC4wNDktLjI1Ni4xNDYtLjM1NGw0LjM1NC00LjM1MyA0LjM1NCA0LjM1NGMuMTk1LjE5NS4xOTUuNTEyIDAgLjcwN3MtLjUxMi4xOTUtLjcwNyAwbC0zLjY0Ny0zLjY0Ny0zLjY0NiAzLjY0NmMtLjE5NS4xOTUtLjUxMi4xOTUtLjcwNyAwLS4wOTgtLjA5Ny0uMTQ3LS4yMjUtLjE0Ny0uMzUzeiIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: contain;
+    color: #404040;
+    text-overflow: " ";
+    overflow: hidden
+}
+
+.a-IRR-selectList:focus {
+    outline: none
+}
+
+@media (-ms-high-contrast:none),
+screen and (-ms-high-contrast:active) {
+    .a-IRR-selectList {
+        padding: 6px;
+        background-image: none
+    }
+}
+
+.a-IRR-sortWidget {
+    position: absolute;
+    width: 220px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    border-radius: 0 0 2px 2px;
+    z-index: 2020
+}
+
+.a-IRR-sortWidget-actions,
+.a-IRR-sortWidget-rows {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.a-IRR-sortWidget-actions {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8
+}
+
+.a-IRR-sortWidget-actions-item {
+    border-right: 1px solid #e8e8e8;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.a-IRR-sortWidget-actions-item:last-child {
+    border-right: 0
+}
+
+.a-IRR-sortWidget-searchIcon {
+    color: silver;
+    position: absolute;
+    margin: 8px
+}
+
+.a-IRR-sortWidget-searchLabel {
+    position: absolute;
+    padding: 8px;
+    height: 32px
+}
+
+.a-IRR-sortWidget-searchLabel:before {
+    font-family: apex-5-icon-font!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-variant: normal!important;
+    text-transform: none!important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e022";
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: #707070
+}
+
+.a-IRR-sortWidget-help {
+    padding: 8px;
+    max-height: 160px;
+    overflow: auto;
+    background-color: #fff
+}
+
+.a-IRR-sortWidget-search>.a-IRR-sortWidget-searchField,
+.a-IRR-sortWidget-search>.a-IRR-sortWidget-searchField[type=text] {
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 0 8px 0 32px;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    border: none;
+    color: #404040
+}
+
+.a-IRR-sortWidget-search>.a-IRR-sortWidget-searchField:focus,
+.a-IRR-sortWidget-search>.a-IRR-sortWidget-searchField[type=text]:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #4696fc
+}
+
+.a-IRR-sortWidget-rows {
+    border-top: 1px solid #e8e8e8;
+    min-height: 160px;
+    max-height: 160px;
+    overflow: auto;
+    transition: height .1s ease
+}
+
+.a-IRR-sortWidget-rows:empty:before {
+    content: "...";
+    color: #fff
+}
+
+.a-IRR-sortWidget-row {
+    display: block;
+    text-decoration: none;
+    color: #404040;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .05);
+    background-clip: border-box
+}
+
+.a-IRR-sortWidget-row:hover {
+    background-color: rgba(0, 0, 0, .1);
+    text-decoration: none;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .05)
+}
+
+.a-IRR-sortWidget-row:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #4696fc
+}
+
+.a-IRR-button.a-IRR-sortWidget-button {
+    border-radius: 0;
+    width: 100%;
+    padding: 8px 0;
+    display: block;
+    box-shadow: none;
+    background-color: #fafafa
+}
+
+.a-IRR-button.a-IRR-sortWidget-button:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1)
+}
+
+.a-IRR-button.a-IRR-sortWidget-button:focus {
+    box-shadow: inset 0 0 0 1px #4696fc, 0 0 0 1px #4696fc, 0 0 2px 2px rgba(70, 150, 252, .5)
+}
+
+.a-IRR-button.a-IRR-sortWidget-button:active,
+.a-IRR-button.a-IRR-sortWidget-button:active:focus {
+    background-color: #e0e0e0;
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, .05), inset 1px 0 0 rgba(0, 0, 0, .05), inset -1px 0 0 rgba(0, 0, 0, .05), inset 0 2px 3px 0 rgba(0, 0, 0, .075)
+}
+
+.a-IRR-button.a-IRR-sortWidget-button.is-active {
+    background-color: #d0d0d0;
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, .05), inset 1px 0 0 rgba(0, 0, 0, .05), inset -1px 0 0 rgba(0, 0, 0, .05), inset 0 2px 3px 0 rgba(0, 0, 0, .075)
+}
+
+.a-IRR-controlsContainer {
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden
+}
+
+.a-IRR-button.a-IRR-button--controls {
+    padding: 8px;
+    box-shadow: none;
+    background-color: #fff
+}
+
+.a-IRR-controls {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.a-IRR-controls-item {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 4px
+}
+
+.a-IRR-controls-item:last-child {
+    margin-bottom: 0
+}
+
+.a-IRR-controls-item .a-IRR-button.a-IRR-button--remove {
+    opacity: .65
+}
+
+.a-IRR-controls-item .a-IRR-button.a-IRR-button--remove:focus,
+.a-IRR-controls-item:hover .a-IRR-button.a-IRR-button--remove {
+    opacity: 1
+}
+
+.a-IRR-controls-item.is-error .a-IRR-controlsLabel {
+    background-color: #ffe6e6
+}
+
+.a-IRR-controls-item.is-error .a-IRR-controls-cell:nth-child(2) {
+    background-color: #ff3b30
+}
+
+.a-IRR-controls-item.is-error .a-IRR-controlsIcon {
+    color: #fff
+}
+
+.a-IRR-controls-item.is-error .a-IRR-controlsLabel {
+    color: #ff3b30
+}
+
+.a-IRR-controls-item--savedReport a.a-IRR-controlsLabel:hover {
+    background-color: #ecf5fd
+}
+
+.a-IRR-controls-item--savedReport .a-IRR-controls-cell:nth-child(2) {
+    background-color: #4aa4ec
+}
+
+.a-IRR-controls-item--search a.a-IRR-controlsLabel:hover {
+    background-color: #ecf5fd
+}
+
+.a-IRR-controls-item--search .a-IRR-controls-cell:nth-child(2) {
+    background-color: #4aa4ec
+}
+
+.a-IRR-controls-item--filter a.a-IRR-controlsLabel:hover {
+    background-color: #dcf9ec
+}
+
+.a-IRR-controls-item--filter .a-IRR-controls-cell:nth-child(2) {
+    background-color: #24cb7f
+}
+
+.a-IRR-controls-item--controlBreak a.a-IRR-controlsLabel:hover {
+    background-color: #e6f0f7
+}
+
+.a-IRR-controls-item--controlBreak .a-IRR-controls-cell:nth-child(2) {
+    background-color: #3b83bd
+}
+
+.a-IRR-controls-item--groupBy a.a-IRR-controlsLabel:hover {
+    background-color: #e6f0f7
+}
+
+.a-IRR-controls-item--groupBy .a-IRR-controls-cell:nth-child(2) {
+    background-color: #3b83bd
+}
+
+.a-IRR-controls-item--aggregate a.a-IRR-controlsLabel:hover {
+    background-color: #e6f0f7
+}
+
+.a-IRR-controls-item--aggregate .a-IRR-controls-cell:nth-child(2) {
+    background-color: #3b83bd
+}
+
+.a-IRR-controls-item--highlight a.a-IRR-controlsLabel:hover {
+    background-color: #fff0cd
+}
+
+.a-IRR-controls-item--highlight .a-IRR-controls-cell:nth-child(2) {
+    background-color: #ffbe2a
+}
+
+.a-IRR-controls-item--flashback a.a-IRR-controlsLabel:hover {
+    background-color: #d5d9dc
+}
+
+.a-IRR-controls-item--flashback .a-IRR-controls-cell:nth-child(2) {
+    background-color: #9ea7ad
+}
+
+.a-IRR-controls-item--chart a.a-IRR-controlsLabel:hover {
+    background-color: #85b4d9
+}
+
+.a-IRR-controls-item--chart .a-IRR-controls-cell:nth-child(2) {
+    background-color: #3b83bd
+}
+
+.a-IRR-controls-item--pivot a.a-IRR-controlsLabel:hover {
+    background-color: #d5d9dc
+}
+
+.a-IRR-controls-item--pivot .a-IRR-controls-cell:nth-child(2) {
+    background-color: #9ea7ad
+}
+
+.a-IRR-controls-item--invalidSettings a.a-IRR-controlsLabel:hover {
+    background-color: #f4f5f6
+}
+
+.a-IRR-controls-item--invalidSettings .a-IRR-controls-cell:nth-child(2) {
+    background-color: #bdc3c7
+}
+
+.a-IRR-controls-item--inactiveSettings a.a-IRR-controlsLabel:hover {
+    background-color: #f4f5f6
+}
+
+.a-IRR-controls-item--inactiveSettings .a-IRR-controls-cell:nth-child(2) {
+    background-color: #bdc3c7
+}
+
+.a-IRR-controls-cell {
+    display: block;
+    float: left;
+    padding: 8px;
+    transition: background-color .1s;
+    background-clip: padding-box;
+    line-height: 16px
+}
+
+.a-IRR-controls-cell:first-child {
+    padding-left: 8px;
+    min-width: 32px
+}
+
+.a-IRR-controls-cell:nth-child(2) {
+    border-radius: 2px 0 0 2px;
+    background-color: #f0f0f0;
+    padding: 8px 9px 8px 8px
+}
+
+.a-IRR-controls-cell:last-child {
+    padding-right: 8px
+}
+
+.a-IRR-controls-cell--label {
+    width: 300px;
+    padding: 0;
+    border-radius: 0 2px 2px 0;
+    overflow: hidden
+}
+
+.a-IRR-controls-cell--remove {
+    padding: 4px 8px
+}
+
+.a-IRR-button.a-IRR-button--remove {
+    display: block;
+    padding: 4px;
+    background-color: transparent;
+    box-shadow: none;
+    color: #a0a0a0
+}
+
+.a-IRR-button.a-IRR-button--remove:hover {
+    color: red
+}
+
+.a-IRR-controlsLabel {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: top;
+    text-decoration: none;
+    padding: 7px 7px 7px 8px;
+    border: 1px solid rgba(0, 0, 0, .075);
+    border-left: none;
+    background-clip: border-box;
+    transition: background-color .1s;
+    background-color: #fff
+}
+
+a.a-IRR-controlsLabel:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #4696fc
+}
+
+.a-IRR-controlsLabel--highlight {
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1)
+}
+
+.a-IRR-controlsCheckboxLabel {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid silver;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+    background-color: #fff;
+    padding: 1px;
+    border-radius: 2px;
+    display: block;
+    font-family: apex-5-icon-font!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-variant: normal!important;
+    text-transform: none!important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.a-IRR-controlsCheckboxLabel:before {
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    content: "\e007";
+    display: block;
+    color: #404040;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .2s
+}
+
+.a-IRR-controlsCheckboxLabel:hover:before {
+    opacity: .15
+}
+
+.a-IRR-controlsCheckboxLabel:active {
+    background-color: #e0e0e0
+}
+
+.a-IRR-controlsCheckboxLabel:active:before {
+    opacity: .75
+}
+
+.a-IRR-controls .a-IRR-controlsCheckbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0
+}
+
+.a-IRR-controls .a-IRR-controlsCheckbox:checked+.a-IRR-controlsCheckboxLabel {
+    position: relative
+}
+
+.a-IRR-controls .a-IRR-controlsCheckbox:checked+.a-IRR-controlsCheckboxLabel:before {
+    opacity: 1
+}
+
+.a-IRR-controls .a-IRR-controlsCheckbox:focus+.a-IRR-controlsCheckboxLabel {
+    border-color: #4696fc;
+    box-shadow: 0 0 2px 0 rgba(70, 150, 252, .5)
+}
+
+.a-IRR-controls .a-IRR-controlsCheckbox:disabled+.a-IRR-controlsCheckboxLabel {
+    opacity: .35;
+    pointer-events: none
+}
+
+.a-IRR-controlsIcon {
+    color: #fff
+}
+
+.a-IRR-reportSummaryContainer {
+    overflow: hidden
+}
+
+.a-IRR-reportSummary {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    margin-bottom: -4px
+}
+
+.a-IRR-reportSummary-item {
+    display: block;
+    float: left;
+    margin-bottom: 4px;
+    margin-right: 8px
+}
+
+.a-IRR-reportSummary-item--savedReport .a-IRR-reportSummary-label:hover {
+    background-color: #ecf5fd
+}
+
+.a-IRR-reportSummary-item--savedReport .a-IRR-reportSummary-icon {
+    background-color: #4aa4ec
+}
+
+.a-IRR-reportSummary-item--search .a-IRR-reportSummary-label:hover {
+    background-color: #ecf5fd
+}
+
+.a-IRR-reportSummary-item--search .a-IRR-reportSummary-icon {
+    background-color: #4aa4ec
+}
+
+.a-IRR-reportSummary-item--filter .a-IRR-reportSummary-label:hover {
+    background-color: #dcf9ec
+}
+
+.a-IRR-reportSummary-item--filter .a-IRR-reportSummary-icon {
+    background-color: #24cb7f
+}
+
+.a-IRR-reportSummary-item--controlBreak .a-IRR-reportSummary-label:hover {
+    background-color: #e6f0f7
+}
+
+.a-IRR-reportSummary-item--controlBreak .a-IRR-reportSummary-icon {
+    background-color: #3b83bd
+}
+
+.a-IRR-reportSummary-item--groupBy .a-IRR-reportSummary-label:hover {
+    background-color: #e6f0f7
+}
+
+.a-IRR-reportSummary-item--groupBy .a-IRR-reportSummary-icon {
+    background-color: #3b83bd
+}
+
+.a-IRR-reportSummary-item--aggregate .a-IRR-reportSummary-label:hover {
+    background-color: #e6f0f7
+}
+
+.a-IRR-reportSummary-item--aggregate .a-IRR-reportSummary-icon {
+    background-color: #3b83bd
+}
+
+.a-IRR-reportSummary-item--highlight .a-IRR-reportSummary-label:hover {
+    background-color: #fff0cd
+}
+
+.a-IRR-reportSummary-item--highlight .a-IRR-reportSummary-icon {
+    background-color: #ffbe2a
+}
+
+.a-IRR-reportSummary-item--flashback .a-IRR-reportSummary-label:hover {
+    background-color: #d5d9dc
+}
+
+.a-IRR-reportSummary-item--flashback .a-IRR-reportSummary-icon {
+    background-color: #9ea7ad
+}
+
+.a-IRR-reportSummary-item--chart .a-IRR-reportSummary-label:hover {
+    background-color: #85b4d9
+}
+
+.a-IRR-reportSummary-item--chart .a-IRR-reportSummary-icon {
+    background-color: #3b83bd
+}
+
+.a-IRR-reportSummary-item--pivot .a-IRR-reportSummary-label:hover {
+    background-color: #d5d9dc
+}
+
+.a-IRR-reportSummary-item--pivot .a-IRR-reportSummary-icon {
+    background-color: #9ea7ad
+}
+
+.a-IRR-reportSummary-item--invalidSettings .a-IRR-reportSummary-label:hover {
+    background-color: #f4f5f6
+}
+
+.a-IRR-reportSummary-item--invalidSettings .a-IRR-reportSummary-icon {
+    background-color: #bdc3c7
+}
+
+.a-IRR-reportSummary-item--inactiveSettings .a-IRR-reportSummary-label:hover {
+    background-color: #f4f5f6
+}
+
+.a-IRR-reportSummary-item--inactiveSettings .a-IRR-reportSummary-icon {
+    background-color: #bdc3c7
+}
+
+.a-IRR-reportSummary-label {
+    display: block;
+    padding: 0;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .075);
+    border-radius: 2px;
+    overflow: hidden;
+    color: #404040;
+    background-color: #fff;
+    transition: box-shadow .1s, background-color .1s
+}
+
+.a-IRR-reportSummary-label:hover {
+    text-decoration: none;
+    background-color: #f8f8f8
+}
+
+.a-IRR-reportSummary-label:focus,
+.a-IRR-reportSummary-label:focus .a-IRR-reportSummary-icon {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #4696fc
+}
+
+.a-IRR-reportSummary-count,
+.a-IRR-reportSummary-icon,
+.a-IRR-reportSummary-value {
+    transition: background-color .1s;
+    display: inline-block;
+    padding: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: top
+}
+
+.a-IRR-reportSummary-icon {
+    color: #fff
+}
+
+.a-IRR-reportSummary-value {
+    min-width: 32px;
+    text-align: center;
+    color: #404040
+}
+
+.a-IRR-reportSummary-count {
+    padding: 0;
+    margin-left: 4px;
+    font-size: 12px;
+    line-height: 16px
+}
+
+.a-IRR-reportSummary-item.has-delete {
+    position: relative
+}
+
+.a-IRR-reportSummary-item.has-delete .a-IRR-reportSummary-label {
+    padding-right: 24px
+}
+
+.a-IRR-reportSummary-item.has-delete .a-IRR-button.a-IRR-button--remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    margin: 4px
+}
+
+.a-IRR-table {
+    border-collapse: collapse;
+    table-layout: auto;
+    border-spacing: 0
+}
+
+.a-IRR-tableWrap {
+    width: 100%;
+    overflow: auto
+}
+
+.a-IRR-table {
+    width: 100%
+}
+
+.a-IRR-header {
+    background-color: #f0f0f0;
+    vertical-align: bottom;
+    padding: 0;
+    color: #404040;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    border-bottom: 1px solid #e0e0e0
+}
+
+.a-IRR-header.is-active,
+.a-IRR-header:hover {
+    background-color: #fff
+}
+
+.a-IRR-header--link {
+    width: 1%
+}
+
+.a-IRR-header--group {
+    padding: 8px;
+    text-align: left;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e8e8e8
+}
+
+.u-RTL .a-IRR-header--group {
+    text-align: right
+}
+
+.a-IRR-header--group:hover {
+    background-color: #f8f8f8
+}
+
+.a-IRR-header {
+    border-left: 1px solid #e0e0e0
+}
+
+.a-IRR-header--pivotColumn,
+.a-IRR-header--pivotRow {
+    background-color: #f8f8f8;
+    padding: 8px
+}
+
+.a-IRR-header--pivotColumn:hover,
+.a-IRR-header--pivotRow:hover {
+    background-color: #f8f8f8
+}
+
+.a-IRR-header--pivotRow {
+    border-right: 1px solid #e0e0e0
+}
+
+.a-IRR-header.a-IRR-header--null {
+    border-top-width: 0;
+    background-color: #fff!important
+}
+
+.a-IRR-header.a-IRR-header--null:hover {
+    background-color: #fff!important
+}
+
+.a-IRR-aggregate {
+    font-weight: 700;
+    background-color: #f4f4f4
+}
+
+.a-IRR-table td {
+    padding: 4px 8px;
+    color: #404040;
+    transition: background-color .1s
+}
+
+.a-IRR-table tr:hover td {
+    background-color: #f4f4f4
+}
+
+.a-IRR-table td {
+    border-left: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0
+}
+
+.a-IRR-table tr td:last-child {
+    border-right: 1px solid #f0f0f0
+}
+
+.a-IRR-table tr td:first-child,
+.a-IRR-table tr th:first-child {
+    border-left-width: 0
+}
+
+.a-IRR-table tr td:last-child,
+.a-IRR-table tr th:last-child {
+    border-right-width: 0
+}
+
+.a-IRR-headerLabel,
+.a-IRR-headerLink {
+    padding: 12px;
+    display: block;
+    text-align: inherit
+}
+
+.a-IRR-headerLink,
+.a-IRR-headerLink:hover {
+    text-decoration: none
+}
+
+.a-IRR-headerLink:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px #4696fc
+}
+
+.a-IRR-headerSort {
+    color: #909090;
+    margin-left: 4px
+}
+
+.u-RTL .a-IRR-headerSort {
+    margin-left: 0;
+    margin-right: 4px
+}
+
+.a-IRR-content {
+    clear: both;
+    position: relative
+}
+
+.a-IRR-controlPanel {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e0e0e0
+}
+
+.a-IRR-paginationWrap {
+    padding: 8px 12px
+}
+
+.a-IRR-paginationWrap--top {
+    border-bottom: 1px solid #e0e0e0
+}
+
+.a-IRR-paginationWrap--bottom {
+    border-top: 1px solid #e0e0e0;
+    float: right;
+}
+
+.a-IRR-paginationWrap--textLeft .a-IRR-pagination {
+    text-align: left
+}
+
+.u-RTL .a-IRR-paginationWrap--textLeft .a-IRR-pagination {
+    text-align: right
+}
+
+.a-IRR-pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right
+}
+
+.u-RTL .a-IRR-pagination {
+    text-align: left
+}
+
+.a-IRR-pagination-item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0
+}
+
+.a-IRR-pagination-label {
+    display: block;
+    line-height: 20px;
+    font-size: 12px;
+    color: #707070;
+    padding: 0 8px
+}
+
+.a-IRR-noDataMsg {
+    margin: 12px;
+    text-align: center;
+    padding: 64px 0
+}
+
+.a-IRR-noDataMsg-icon .a-Icon {
+    height: 32px;
+    width: 32px;
+    color: #d0d0d0;
+    margin-bottom: 16px
+}
+
+.a-IRR-noDataMsg-icon .a-Icon:before {
+    font-size: 32px
+}
+
+.a-IRR-message,
+.a-IRR-noDataMsg-text {
+    display: block;
+    font-size: 12px;
+    color: #707070
+}
+
+.a-IRR-message {
+    padding: 12px 8px
+}
+
+.a-IRR-message:empty {
+    display: none
+}
+
+.a-IRR-button {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .15);
+    background-color: #fafafa
+}
+
+.a-IRR-button:hover {
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .15), 0 1px 2px 0 rgba(0, 0, 0, .1)
+}
+
+.a-IRR-button.is-active,
+.a-IRR-button:active,
+.a-IRR-button:active:focus {
+    background-color: #e0e0e0;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .15), inset 0 2px 3px 0 rgba(0, 0, 0, .1)
+}
+
+.a-IRR-button:focus {
+    box-shadow: inset 0 0 0 1px #4696fc, 0 0 0 1px #4696fc, 0 0 2px 2px rgba(70, 150, 252, .5)
+}
+
+.a-IRR-button.a-IRR-button--pagination {
+    border-radius: 100%;
+    vertical-align: top
+}
+
+.a-IRR-button.a-IRR-button--pagination:hover {
+    background-color: #4696fc;
+    color: #fff
+}
+
+.a-IRR-pagination-item:first-child .a-IRR-button.a-IRR-button--pagination {
+    padding: 2px 3px 2px 1px
+}
+
+.a-IRR-pagination-item:last-child .a-IRR-button.a-IRR-button--pagination {
+    padding: 2px 1px 2px 3px
+}
+
+.a-IRR-button.a-IRR-button--search {
+    font-weight: 700;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.u-RTL .a-IRR-button.a-IRR-button--search {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.a-IRR-button.a-IRR-button--reportView {
+    padding-left: 8px
+}
+
+.a-IRR-toolbar--singleRow {
+    display: table;
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0
+}
+
+.a-IRR-singleRowNav,
+.a-IRR-toolbarNav {
+    display: table-cell
+}
+
+.a-IRR-viewOption,
+.a-IRR-viewOptionsContainer {
+    display: inline-block
+}
+
+.a-IRR-viewOption {
+    margin-left: 8px
+}
+
+.a-IRR-viewOption input[type=checkbox] {
+    display: inline-block
+}
+
+.a-IRR-viewOption label {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 4px
+}
+
+.a-IRR-viewOption input:checked+label {
+    font-weight: 700
+}
+
+.a-IRR-singleRowNav {
+    vertical-align: middle;
+    padding: 0 4px;
+    white-space: nowrap
+}
+
+.a-IRR-singleRow-group:first-child .a-IRR-singleRow-link {
+    border-top: none
+}
+
+.a-IRR-singleRow-title {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 16px
+}
+
+.a-IRR-singleRow-link {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8
+}
+
+.a-IRR-singleRow-link .a-Icon {
+    color: #b0b0b0
+}
+
+.a-IRR-singleRow-link:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px #4696fc
+}
+
+.a-IRR-singleRow-link:hover {
+    background-color: #f0f0f0
+}
+
+.a-IRR-singleRow-rows.is-collapsed {
+    display: none
+}
+
+.a-IRR-singleRow-rows.is-expanded {
+    display: block
+}
+
+.a-IRR-singleRow-row {
+    display: table;
+    width: 100%;
+    table-layout: fixed
+}
+
+.a-IRR-singleRow-row:hover .a-IRR-singleRow-name,
+.a-IRR-singleRow-row:hover .a-IRR-singleRow-value {
+    background-color: #f8f8f8
+}
+
+.a-IRR-singleRow-group .a-IRR-singleRow-row:last-child .a-IRR-singleRow-name,
+.a-IRR-singleRow-group .a-IRR-singleRow-row:last-child .a-IRR-singleRow-value {
+    border-bottom: none
+}
+
+.a-IRR-singleRow-name,
+.a-IRR-singleRow-value {
+    display: table-cell;
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #404040;
+    font-size: 12px;
+    line-height: 16px
+}
+
+.a-IRR-singleRow-name {
+    width: 25%;
+    border-right: 1px solid #f0f0f0;
+    font-weight: 700;
+    background-color: #fcfcfc
+}
+
+.a-IRR-dialogContent--filter {
+    min-height: 160px;
+    padding: 8px
+}
+
+.a-IRR-dialogContent--highlight {
+    min-height: 300px
+}
+
+.a-IRR-col-values-drop {
+    display: block;
+    min-width: 180px;
+    max-height: 80px;
+    overflow: auto;
+    position: absolute;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+    padding: 2px;
+    background-color: #fff;
+    z-index: 1000
+}
+
+.a-IRR-col-value {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 8px;
+    text-decoration: none
+}
+
+.a-IRR-col-value:focus,
+.a-IRR-col-value:hover {
+    background-color: #f0f0f0;
+    text-decoration: none
+}
+
+.a-IRR-col-value:focus {
+    box-shadow: inset 0 0 0 1px #4696fc
+}
+
+.u-RTL .a-IRR-col-value {
+    text-align: right
+}
+
+.a-IRR-form-label {
+    color: #404040;
+    padding: 0;
+    line-height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    font-weight: 700
+}
+
+.a-IRR-dialogTable {
+    border-spacing: 0 6px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    min-width: 280px
+}
+
+.a-IRR-dialogTable:last-child {
+    margin-bottom: 0
+}
+
+.a-IRR-dialogTable input[type=radio] {
+    margin: 0 4px 0 0
+}
+
+.a-IRR-dialogTable+.a-IRR-dialogTable {
+    margin-top: -12px
+}
+
+.a-IRR-dialogTable .a-Button {
+    padding: 4px 8px
+}
+
+.a-IRR-dialogTable .error {
+    border: 1px solid red
+}
+
+.a-IRR-dialogTable .calculator {
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%
+}
+
+.a-IRR-dialogTable .a-IRR-key {
+    padding-right: 0
+}
+
+.a-IRR-dialogTable .a-IRR-key .nolink {
+    display: block;
+    padding: 4px;
+    line-height: 16px;
+    height: 24px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 2px;
+    margin: 2px;
+    text-align: center;
+    color: initial;
+    font-weight: 500
+}
+
+.a-IRR-dialogTable .a-IRR-key .nolink:hover {
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 2px rgba(0, 0, 0, .05)
+}
+
+.a-IRR-dialogTable .a-IRR-key .nolink:active {
+    background-color: rgba(0, 0, 0, .15);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1), inset 0 1px 2px rgba(0, 0, 0, .05)
+}
+
+.a-IRR-dialog-examples {
+    margin: 4px 24px;
+    font-family: Menlo, Consolas, monospace
+}
+
+.a-IRR-dialog-examples li {
+    font-size: 10px;
+    line-height: 14px
+}
+
+.a-IRR-dialog-tableContainer {
+    width: 200px;
+    height: 180px;
+    overflow-y: auto;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .025);
+    border-radius: 2px
+}
+
+.a-IRR-dialog-tableContainer .nolink {
+    padding: 4px
+}
+
+.a-IRR-dialog-tableContainer table.calculator td {
+    padding-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
+.a-IRR-dialog-tableContainer .calculator .nolink {
+    line-height: 16px;
+    display: block;
+    padding: 4px 8px;
+    color: initial
+}
+
+.a-IRR-dialog-tableContainer .calculator .nolink:hover {
+    background-color: rgba(0, 0, 0, .1)
+}
+
+.a-IRR-dialog-tableContainer .a-IRR-dialog-colid {
+    line-height: 16px;
+    display: block;
+    padding: 4px;
+    font-weight: 500;
+    min-width: 24px;
+    text-align: right
+}
+
+.a-IRR-dialog-tableContainer .a-IRR-computation-function {
+    font-family: Menlo, Consolas, monospace
+}
+
+.a-IRR-dialogTable #IR_computation_expr {
+    width: 100%;
+    padding: 4px;
+    margin: 0;
+    border-radius: 2px;
+    font-family: Menlo, Consolas, monospace;
+    font-size: 12px;
+    line-height: 16px;
+    border-color: rgba(0, 0, 0, .25)
+}
+
+.a-IRR-dialogTable-header {
+    font-weight: 700
+}
+
+.a-IRR-dialogTable th {
+    font-weight: 700;
+    padding: 4px
+}
+
+.a-IRR-dialogTable td,
+.a-IRR-dialogTable th {
+    text-align: left;
+    padding-right: 8px;
+    vertical-align: top;
+    line-height: 16px
+}
+
+.u-RTL .a-IRR-dialogTable td,
+.u-RTL .a-IRR-dialogTable th {
+    text-align: right
+}
+
+.a-IRR-controlGroup,
+.a-IRR-searchButtonContainer,
+.a-IRR-searchFieldContainer,
+.a-IRR-viewsContainer {
+    display: inline-block;
+    vertical-align: top
+}
+
+.a-IRR-controlGroup {
+    margin-bottom: 8px;
+    float: right;
+}
+
+.a-IRR-controlGroup:empty {
+    display: none
+}
+
+.a-IRR-iconList {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.a-IRR-iconList:after,
+.a-IRR-iconList:before {
+    display: table;
+    content: ""
+}
+
+.a-IRR-iconList:after {
+    clear: both
+}
+
+@media only-screen and (min-width: 480px) {
+    .a-IRR-iconList {
+        width: 400px
+    }
+}
+
+.a-IRR-iconList-item {
+    margin-right: 8px;
+    min-width: 64px;
+    display: inline-block
+}
+
+.a-IRR-iconList-link {
+    display: block;
+    text-align: center;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 8px 16px
+}
+
+.a-IRR-iconList-link .a-Icon {
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    font-size: 32px;
+    line-height: 1
+}
+
+.a-IRR-iconList-link .a-Icon:before {
+    font-size: 32px
+}
+
+.a-IRR-iconList-label {
+    font-size: 11px;
+    display: block
+}
+
+.u-HCM .a-IRR-search-field {
+    height: 34px
+}
+
+.u-HCM .a-IRR-views .a-IRR-button {
+    border: 1px solid!important
+}
+
+.a-IRR .calculator td.w20 {
+    width: 20px;
+    height: 20px
+}
+
+.a-IRR .calculator td.w40 {
+    width: 40px;
+    height: 20px
+}
+
+.a-IRR .calculator td.w120 {
+    width: 100%;
+    height: 20px
+}
