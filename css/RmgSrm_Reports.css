@@ -1,9 +1,3 @@
-.a-IRR-controls {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 .a-Toolbar {
     background-color: #edeef4;
     width: 100%;
@@ -12,11 +6,6 @@
 
 .a-Toolbar-groupContainer {
     background-color: #edeef4;
-}
-
-.a-IRR-table td {
-    border-top: 1px solid #dddfea;
-    border-left: 0px;
 }
 
 .a-GV-header,
@@ -29,17 +18,6 @@
     text-transform: uppercase;
     line-height: 20px;
     border: 0px;
-}
-
-.a-IRR-headerLink,
-.a-IRR-headerLink:hover {
-    background-color: #fff;
-    height: 48px;
-    box-sizing: border-box;
-    font-family: 'Roboto Regular', 'Roboto';
-    color: #696a72;
-    text-transform: uppercase;
-    line-height: 20px;
 }
 
 .t-Report-colHead {

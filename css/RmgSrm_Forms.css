@@ -56,15 +56,20 @@ body .ui-datepicker .ui-datepicker-prev {
 
 .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc input:checked+label,
 .apex-button-group input:checked+label {
+    border-radius: 4px;
     border-color: #2f3f4f;
-    background-color: #2e7dcb;
+    background-color: #435c74;
     color: #ffffff;
     box-shadow: none;
 }
 
 .t-Form-fieldContainer--floatingLabel .t-Form-inputContainer .apex-item-display-only {
-    color: #696a72;
+    color: rgb(84, 84, 84);
     background-color: #edeef4;
     border-color: #c3c5cc;
-    border-style: dashed;
+    border-style: solid;
+}
+
+.apex-item-group--rc input:checked+label {
+    font-weight: 400;
 }
