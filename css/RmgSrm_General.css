@@ -264,3 +264,30 @@ ul.apex-rds .apex-rds-selected a {
     box-shadow: none;
     margin-bottom: 1rem;
 }
+
+
+/* Put text instead of waiting indicator */
+
+
+/*
+.u-Processing {
+    content: "<div class=\"Name2\"></div>" !important;
+    height: 10% !important;
+    width: 30% !important;
+    cursor: text !important;
+    border-radius: 0% !important;
+    background-color: transparent !important;
+    z-index: 1000 !important;
+}
+
+.u-Processing:before {
+    content: 'Eventjes geduld...' !important;
+    height: 10% !important;
+    width: 50% !important;
+    cursor: text !important;
+    border-radius: 0% !important;
+    font-size: 200% !important;
+    background-color: White !important;
+    z-index: 1000 !important;
+}
+*/

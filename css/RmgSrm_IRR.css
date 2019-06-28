@@ -20,14 +20,17 @@
     position: relative
 }
 
-.a-IRR-buttons,
 .a-IRR-controls {
     display: table-cell;
-    vertical-align: top
+    vertical-align: top;
+    float: right;
 }
 
 .a-IRR-buttons {
-    text-align: right
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+    float: left;
 }
 
 .a-IRR-actions,
@@ -293,7 +296,7 @@ screen and (-ms-high-contrast:active) {
 }
 
 .a-IRR-button.a-IRR-sortWidget-button:focus {
-    box-shadow: inset 0 0 0 1px #435c74, 0 0 0 1px #435c74, 0 0 2px 2px rgba(70, 150, 252, .5)
+    box-shadow: inset 0 0 0 1px #435c74, 0 0 0 1px #435c74, 0 0 2px 2px #435c74
 }
 
 .a-IRR-button.a-IRR-sortWidget-button:active,
@@ -766,6 +769,7 @@ a.a-IRR-controlsLabel:focus {
 .a-IRR-paginationWrap--top {
     border-bottom: 0;
     border-top: 0;
+    display: flex;
 }
 
 .a-IRR-paginationWrap--bottom {
@@ -784,7 +788,8 @@ a.a-IRR-controlsLabel:focus {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: right
+    text-align: right;
+    float: right;
 }
 
 .u-RTL .a-IRR-pagination {
@@ -804,6 +809,10 @@ a.a-IRR-controlsLabel:focus {
     font-size: 12px;
     color: #707070;
     padding: 0 8px
+}
+
+.a-IRR-paginationWrap--bottom .a-IRR-pagination-label {
+    display: none;
 }
 
 .a-IRR-noDataMsg {
@@ -859,13 +868,21 @@ a.a-IRR-controlsLabel:focus {
     box-shadow: inset 0 0 0 1px #4696fc, 0 0 0 1px #4696fc, 0 0 2px 2px rgba(70, 150, 252, .5)
 }
 
-.a-IRR-button.a-IRR-button--pagination {
-    border-radius: 100%;
-    vertical-align: top
+.a-IRR-paginationWrap--top .a-IRR-button.a-IRR-button--pagination {
+    display: none;
+}
+
+.a-IRR-paginationWrap--bottom .a-IRR-button.a-IRR-button--pagination {
+    border-radius: 0.4rem;
+    height: 3.2rem;
+    width: 3.2rem;
+    text-align: center;
+    vertical-align: top;
+    background-color: #fff;
 }
 
 .a-IRR-button.a-IRR-button--pagination:hover {
-    background-color: #4696fc;
+    background-color: #2f3f4f;
     color: #fff
 }
 
