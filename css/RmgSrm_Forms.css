@@ -73,3 +73,129 @@ body .ui-datepicker .ui-datepicker-prev {
 .apex-item-group--rc input:checked+label {
     font-weight: 400;
 }
+
+
+/* Style the html readonly property for input fields  */
+
+input:-moz-read-only {
+    /* For Firefox */
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+input:read-only {
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+input:-moz-read-only:hover {
+    /* For Firefox */
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+input:read-only:hover {
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+input:-moz-read-only:focus {
+    /* For Firefox */
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+input:read-only:focus {
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+input:-moz-read-only:active {
+    /* For Firefox */
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+input:read-only:active {
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+textarea:-moz-read-only {
+    /* For Firefox */
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+textarea:read-only {
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+textarea:-moz-read-only:hover {
+    /* For Firefox */
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+textarea:read-only:hover {
+    color: rgb(84, 84, 84);
+    background-color: #edeef4;
+    border-color: #c3c5cc;
+    border-style: solid;
+}
+
+
+/* I know, !important is not done, but apex does it and we need to override them again */
+
+textarea:-moz-read-only:focus {
+    /* For Firefox */
+    color: rgb(84, 84, 84) !important;
+    background-color: #edeef4 !important;
+    border-color: #c3c5cc !important;
+    border-style: solid !important;
+}
+
+textarea:read-only:focus {
+    color: rgb(84, 84, 84) !important;
+    background-color: #edeef4 !important;
+    border-color: #c3c5cc !important;
+    border-style: solid !important;
+}
+
+textarea:-moz-read-only:active {
+    /* For Firefox */
+    color: rgb(84, 84, 84)!important;
+    background-color: #edeef4 !important;
+    border-color: #c3c5cc !important;
+    border-style: solid !important;
+}
+
+textarea:read-only:active {
+    color: rgb(84, 84, 84) !important;
+    background-color: #edeef4 !important;
+    border-color: #c3c5cc !important;
+    border-style: solid !important;
+}
