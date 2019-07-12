@@ -317,9 +317,7 @@ screen and (-ms-high-contrast:active) {
 }
 
 .a-IRR-button.a-IRR-button--controls {
-    padding: 8px;
-    box-shadow: none;
-    background-color: #fff
+    display: none;
 }
 
 .a-IRR-controls {
@@ -328,7 +326,13 @@ screen and (-ms-high-contrast:active) {
     list-style: none
 }
 
+.a-MediaBlock-content {
+    float: left;
+    overflow: hidden;
+}
+
 .a-IRR-controls-item {
+    float: left;
     display: block;
     overflow: hidden;
     margin-bottom: 4px
@@ -384,7 +388,8 @@ screen and (-ms-high-contrast:active) {
 }
 
 .a-IRR-controls-item--filter .a-IRR-controls-cell:nth-child(2) {
-    background-color: #24cb7f
+    display: none;
+    background-color: #ecf5fd
 }
 
 .a-IRR-controls-item--controlBreak a.a-IRR-controlsLabel:hover {
@@ -428,7 +433,7 @@ screen and (-ms-high-contrast:active) {
 }
 
 .a-IRR-controls-item--chart a.a-IRR-controlsLabel:hover {
-    background-color: #85b4d9
+    background-color: #fff
 }
 
 .a-IRR-controls-item--chart .a-IRR-controls-cell:nth-child(2) {
@@ -606,6 +611,10 @@ a.a-IRR-controlsLabel:focus {
 
 .a-IRR-controlsIcon {
     color: #fff
+}
+
+.icon-irr-filter {
+    display: none;
 }
 
 .a-IRR-table {

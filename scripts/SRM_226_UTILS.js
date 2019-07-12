@@ -28,13 +28,13 @@ Rmg.Srm.Utils.showRegion = function(ID) {
 
 Rmg.Srm.Utils.goBackNoWarning = function() {
     console.log('Keerekeeweere')
-    window.history.back();
+    window.history.back()
 }
 
 Rmg.Srm.Utils.goBackWithComfirmation = function(message) {
     console.log('Keerekeeweere')
     if (confirm(message)) {
-        window.history.back();
+        window.history.back()
     }
 }
 

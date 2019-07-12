@@ -1,0 +1,63 @@
+.over {
+    border-radius: 5px;
+    padding: 6px;
+    height: 30px;
+    background-color: #c3000a;
+    box-sizing: border-box;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #fff;
+    text-align: left;
+    line-height: 16px;
+}
+
+.today {
+    border-radius: 5px;
+    padding: 6px;
+    height: 30px;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #ff6600;
+    text-align: left;
+    border: 1px solid #ff6600;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    line-height: 16px;
+}
+
+.oneday {
+    border-radius: 5px;
+    padding: 6px;
+    height: 30px;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #ff9428;
+    text-align: left;
+    border: 1px solid #ff9428;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    line-height: 16px;
+}
+
+.twodays {
+    border-radius: 5px;
+    padding: 6px;
+    height: 30px;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #009900;
+    text-align: left;
+    border: 1px solid #009900;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    line-height: 16px;
+}
+
+.longer {
+    border-radius: 5px;
+    padding: 6px;
+    height: 30px;
+    font-family: 'Roboto Regular', 'Roboto';
+    color: #1a75a0;
+    text-align: left;
+    border: 1px solid #1a75a0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    line-height: 16px;
+}
