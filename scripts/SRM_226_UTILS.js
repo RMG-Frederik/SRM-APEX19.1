@@ -27,12 +27,10 @@ Rmg.Srm.Utils.showRegion = function(ID) {
 }
 
 Rmg.Srm.Utils.goBackNoWarning = function() {
-    console.log('Keerekeeweere')
     window.history.back()
 }
 
 Rmg.Srm.Utils.goBackWithComfirmation = function(message) {
-    console.log('Keerekeeweere')
     if (confirm(message)) {
         window.history.back()
     }
@@ -54,4 +52,16 @@ Rmg.Srm.Utils.makeEntireRowLink = function(target) {
                 $(this).css('cursor', 'default');
             })
     });
+}
+
+Rmg.Srm.Utils.customComfirm = function(pMessage, pCallback, pOkLabel, pCancelLabel) {
+    var l_original_messages = { "APEX.DIALOG.OK": apex.lang.getMessage("APEX.DIALOG.OK"), "APEX.DIALOG.CANCEL": apex.lang.getMessage("APEX.DIALOG.CANCEL") };
+    //change the button labels messages
+    apex.lang.addMessages({ "APEX.DIALOG.OK": pOkLabel });
+    apex.lang.addMessages({ "APEX.DIALOG.CANCEL": pCancelLabel });
+    //show the confirm dialog
+    apex.message.confirm(pMessage, pCallback);
+    //changes the button labels messages back to their original values
+    apex.lang.addMessages({ "APEX.DIALOG.OK": l_original_messages["APEX.DIALOG.OK"] });
+    apex.lang.addMessages({ "APEX.DIALOG.CANCEL": l_original_messages["APEX.DIALOG.CANCEL"] });
 }
