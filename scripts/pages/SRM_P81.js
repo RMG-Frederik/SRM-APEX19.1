@@ -26,6 +26,8 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
                     success: function(pData) {
                         apex.item('P81_TAAK_STATE_CODE').setValue("In execution");
                         apex.message.alert("Taak succesvol overgenomen");
+                        var url = "f?p=" + $v('pFlowId') + ":TASK_OVERVIEW:" + $v('pInstance') + ":::::";
+                        window.location.assign(url);
                     }
                 });
             }
@@ -35,9 +37,11 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
      * @function taakSluiten
      * @example Rmg.Srm.Page81.taakSluiten(taakId,status,opmerking,voornaam);
      **/
-Rmg.Srm.Page81.taakSluiten = function(id, state, remark, voornaam) {
-    var comfirmationString = voornaam + ", ben je zeker dat je de taak " + id + " wilt sluiten ?";
-    apex.message.confirm(comfirmationString, function(okPressed) {
+Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, voornaam) {
+    var state = "COMPLETED";
+    if (isCancelled) state = "CANCELLED";
+    var comfirmationString = voornaam + ", ben je zeker dat je de taak " + id + "met volgende boodschap: " + remark + " wilt sluiten ?";
+    Rmg.Srm.Utils.customComfirm(comfirmationString, function(okPressed) {
         if (okPressed) {
             apex.server.process("TAAK_SLUITEN", {
                 x01: id,
@@ -46,10 +50,28 @@ Rmg.Srm.Page81.taakSluiten = function(id, state, remark, voornaam) {
             }, {
                 dataType: 'text',
                 success: function(pData) {
-                    var url = "f?p=" + $v('pFlowId') + ":TASK_OVERVIEW:" + $v('pInstance') + ":::::";
-                    window.location.assign(url);
+                    if (isCancelled) {
+                        var url = "f?p=" + $v('pFlowId') + ":TASK_OVERVIEW:" + $v('pInstance') + ":::::";
+                        window.location.assign(url);
+                    } else {
+                        Rmg.Srm.Utils.customComfirm("Wenst u een vervolgtaak aan te maken ?", function(okPressed) {
+                            if (okPressed) {
+                                var url = "f?p=" + $v('pFlowId') + ":TASK_CREATE:" + $v('pInstance') + ":::::";
+                                window.location.assign(url);
+                            }
+                        }, "Ja", "Nee");
+                    }
                 }
             });
         }
-    });
+    }, "Ja", "Nee");
+}
+
+/**
+ * @function taakUitvoeren
+ * @example Rmg.Srm.Page81.taakUitvoeren();
+ **/
+Rmg.Srm.Page81.taakUitvoeren = function() {
+    var url = "f?p=" + $v('pFlowId') + ":OFF:" + $v('pInstance') + ":::::";
+    window.location.assign(url);
 }
