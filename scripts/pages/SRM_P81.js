@@ -71,7 +71,7 @@ Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, voornaam) {
  * @function taakUitvoeren
  * @example Rmg.Srm.Page81.taakUitvoeren();
  **/
-Rmg.Srm.Page81.taakUitvoeren = function() {
-    var url = "f?p=" + $v('pFlowId') + ":OFF:" + $v('pInstance') + ":::::";
+Rmg.Srm.Page81.taakUitvoeren = function(pOffId) {
+    var url = "f?p=" + $v('pFlowId') + ":OFF:" + $v('pInstance') + "::::::P10_OFFERTE_ID:" + pOffId;
     window.location.assign(url);
 }

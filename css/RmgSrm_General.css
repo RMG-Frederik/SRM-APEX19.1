@@ -265,6 +265,44 @@ ul.apex-rds .apex-rds-selected a {
     margin-bottom: 1rem;
 }
 
+.rmg-srm-icon {
+    background-color: #fff;
+    border-color: #e6e6e6!important;
+    display: block;
+    width: 100%;
+    padding: 2.2rem .8rem .6rem;
+    border-radius: .2rem;
+    flex-grow: 0;
+    font-weight: 400;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    min-height: 4.8rem;
+    line-height: 4rem;
+    width: 3.2rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    transition: .2s ease;
+    flex-shrink: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.apex-item-wrapper--display-only .rmg-srm-icon {
+    background-color: #edeef4;
+    border-color: #c3c5cc!important;
+    line-height: 4.8rem;
+}
+
+.apex-item-display-only .rmg-srm-icon {
+    background-color: #edeef4;
+    border-color: #c3c5cc!important;
+}
+
 
 /* Put text instead of waiting indicator */
 

@@ -618,7 +618,6 @@ a.a-IRR-controlsLabel:focus {
 }
 
 .a-IRR-table {
-    border-collapse: collapse;
     table-layout: auto;
     border-spacing: 0
 }
