@@ -292,6 +292,26 @@ ul.apex-rds .apex-rds-selected a {
     justify-content: center;
 }
 
+.apex-item-wrapper:focus .rmg-srm-icon {
+    background-color: #435c74;
+    color: #FFF;
+}
+
+.apex-item-wrapper:focus-within .rmg-srm-icon {
+    background-color: #435c74;
+    color: #FFF;
+}
+
+.apex-item-wrapper:hover .rmg-srm-icon {
+    background-color: #435c74;
+    color: #FFF;
+}
+
+.apex-item-wrapper:active .rmg-srm-icon {
+    background-color: #435c74;
+    color: #FFF;
+}
+
 .apex-item-wrapper--display-only .rmg-srm-icon {
     background-color: #edeef4;
     border-color: #c3c5cc!important;
@@ -301,6 +321,19 @@ ul.apex-rds .apex-rds-selected a {
 .apex-item-display-only .rmg-srm-icon {
     background-color: #edeef4;
     border-color: #c3c5cc!important;
+}
+
+.apex-item-wrapper--display-only:hover .rmg-srm-icon {
+    background-color: #edeef4;
+    border-color: #c3c5cc!important;
+    line-height: 4.8rem;
+    color: black;
+}
+
+.apex-item-display-only:hover .rmg-srm-icon {
+    background-color: #edeef4;
+    border-color: #c3c5cc!important;
+    color: black;
 }
 
 
