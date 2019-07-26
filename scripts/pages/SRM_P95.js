@@ -27,11 +27,15 @@ Rmg.Srm.Page95.setToewijzingswaardeVeld = function() {
     switch (vToewijzing) {
         case '1':
             apex.item("P95_TOEWIJZING_PERSOON").show();
-            apex.item("P95_TOEWIJZING_UNIT").hide();
+            apex.item("P95_TOEWIJZING_UNIT").show();
             break;
         case '3':
             apex.item("P95_TOEWIJZING_PERSOON").hide();
             apex.item("P95_TOEWIJZING_UNIT").show();
+            break;
+        case '0':
+            apex.item("P95_TOEWIJZING_PERSOON").hide();
+            apex.item("P95_TOEWIJZING_UNIT").hide();
             break;
         default:
             apex.item("P95_TOEWIJZING_PERSOON").hide();
