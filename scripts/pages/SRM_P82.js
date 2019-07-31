@@ -32,7 +32,7 @@ Rmg.Srm.Page82.setUnitAndPersonLov = function() {
         apex.item("P82_OWNER_PERSOON_ID").enable();
         apex.item("P82_OWNER_ORG_UNIT_ID").disable();
     } else if (vPerson === '0') {
-        apex.item("P82_OWNER_PERSOON_ID").disable();
+        apex.item("P82_OWNER_PERSOON_ID").enable();
         apex.item("P82_OWNER_ORG_UNIT_ID").enable();
     } else {
         apex.item("P82_OWNER_PERSOON_ID").enable();
