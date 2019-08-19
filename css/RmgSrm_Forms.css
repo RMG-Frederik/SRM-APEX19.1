@@ -199,3 +199,12 @@ textarea:read-only:active {
     border-color: #c3c5cc !important;
     border-style: solid !important;
 }
+
+.apex-item-textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-height: 6.4rem;
+    font-size: 1.4rem !important;
+    font-family: 'Roboto', sans-serif;
+}
