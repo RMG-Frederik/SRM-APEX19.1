@@ -71,14 +71,93 @@ Rmg.Srm.Utils.makeEntireRowLink = function(target) {
         });
     }
     /**
-     * Shows an apex comfirmation message with custom labels for the buttons
-     * @param {string} pMessage - The message that needs to be displayed
-     * @param {string} pCallback - Callback url
-     * @param {string} pOkLabel - The text on the ok button
-     * @param {string} pCancelLabel - The text on the cancel button
-     * @example
-     *     Rmg.Srm.Utils.makeEntireRowLink('81')
+     * Confine DatePicker to selected dates
      */
+Rmg.Srm.Utils.limitDatePicker = function(datepicker, availableDates, enabled) {
+    console.log('Picking dates');
+
+    function disableArrayOfDays(d) {
+        // normalize the date for searching in array
+        var dmy = "";
+        dmy += ("00" + d.getDate()).slice(-2) + "-";
+        dmy += ("00" + (d.getMonth() + 1)).slice(-2) + "-";
+        dmy += d.getFullYear();
+        console.log(dmy);
+        if ($.inArray(dmy, availableDates) != -1) {
+            console.log('Date found');
+            return [true, null, null];
+        } else {
+            return [false, null, null];
+        }
+    }
+
+    function enableArrayOfDays(d) {
+        // normalize the date for searching in array
+        var dmy = "";
+        dmy += ("00" + d.getDate()).slice(-2) + "-";
+        dmy += ("00" + (d.getMonth() + 1)).slice(-2) + "-";
+        dmy += d.getFullYear();
+        console.log(dmy);
+        if ($.inArray(dmy, availableDates) == -1) {
+            console.log('Date found');
+            return [true, null, null];
+        } else {
+            return [false, null, null];
+        }
+    }
+    if (enabled)
+        $(datepicker).datepicker("option", "beforeShowDay", function(date) { return enableArrayOfDays(date); }).next('button').addClass('a-Button a-Button--calendar');
+    else
+        $(datepicker).datepicker("option", "beforeShowDay", function(date) { return disableArrayOfDays(date); }).next('button').addClass('a-Button a-Button--calendar');
+}
+
+Rmg.Srm.Utils.highlightDatePicker = function(datepicker, availableDates, enabled) {
+    console.log('Picking dates');
+
+    function disableArrayOfDays(d) {
+        // normalize the date for searching in array
+        var dmy = "";
+        dmy += ("00" + d.getDate()).slice(-2) + "-";
+        dmy += ("00" + (d.getMonth() + 1)).slice(-2) + "-";
+        dmy += d.getFullYear();
+        console.log(dmy);
+        if ($.inArray(dmy, availableDates) != -1) {
+            console.log('Date found');
+            return [true, "u-warning", null];
+        } else {
+            return [true, "u-info", null];
+        }
+    }
+
+    function enableArrayOfDays(d) {
+        // normalize the date for searching in array
+        var dmy = "";
+        dmy += ("00" + d.getDate()).slice(-2) + "-";
+        dmy += ("00" + (d.getMonth() + 1)).slice(-2) + "-";
+        dmy += d.getFullYear();
+        console.log(dmy);
+        if ($.inArray(dmy, availableDates) == -1) {
+            console.log('Date found');
+            return [true, "u-warning", null];
+        } else {
+            return [true, "u-info", null];
+        }
+    }
+    if (enabled)
+        $(datepicker).datepicker("option", "beforeShowDay", function(date) { return enableArrayOfDays(date); }).next('button').addClass('a-Button a-Button--calendar');
+    else
+        $(datepicker).datepicker("option", "beforeShowDay", function(date) { return disableArrayOfDays(date); }).next('button').addClass('a-Button a-Button--calendar');
+}
+
+/**
+ * Shows an apex comfirmation message with custom labels for the buttons
+ * @param {string} pMessage - The message that needs to be displayed
+ * @param {string} pCallback - Callback url
+ * @param {string} pOkLabel - The text on the ok button
+ * @param {string} pCancelLabel - The text on the cancel button
+ * @example
+ *     Rmg.Srm.Utils.makeEntireRowLink('81')
+ */
 Rmg.Srm.Utils.customComfirm = function(pMessage, pCallback, pOkLabel, pCancelLabel) {
     var l_original_messages = { "APEX.DIALOG.OK": apex.lang.getMessage("APEX.DIALOG.OK"), "APEX.DIALOG.CANCEL": apex.lang.getMessage("APEX.DIALOG.CANCEL") };
     //change the button labels messages
