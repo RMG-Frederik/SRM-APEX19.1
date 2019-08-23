@@ -1,0 +1,44 @@
+/*
+APEX Dropzone CSS
+Author: Daniel Hochleitner
+Version: 2.4.1
+*/
+
+.dz-message {
+    font-family: 'Roboto Regular', 'Roboto';
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    background: none;
+}
+
+.dz-style1 {
+    border: 2px solid #00519a;
+    ;
+    background: white;
+    overflow: auto;
+}
+
+.dz-style2 {
+    border: 3px dashed #2f3f4f;
+    border-radius: 5px;
+    background: white;
+    overflow: auto;
+}
+
+.dz-style3 {
+    border: 3px dashed #ff0026;
+    border-radius: 5px;
+    background: white;
+    overflow: auto;
+}
+
+.dz-style4 {
+    border: 2px dashed #8E8E93;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #707070;
+    overflow: auto;
+}

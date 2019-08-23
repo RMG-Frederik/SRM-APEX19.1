@@ -74,6 +74,10 @@ body .ui-datepicker .ui-datepicker-prev {
     font-weight: 400;
 }
 
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--rich-text-editor .t-Form-itemWrapper {
+    padding-top: 0;
+}
+
 
 /* Style the html readonly property for input fields  */
 

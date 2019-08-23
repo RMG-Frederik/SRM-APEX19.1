@@ -112,6 +112,14 @@ p {
     padding: 0rem;
 }
 
+.nodatafound {
+    display: block;
+    padding: 1px;
+    font-size: 1.2em;
+    font-family: 'Roboto Medium', 'Roboto';
+    color: #111423;
+}
+
 .t-Breadcrumb-item .t-Icon:hover {
     text-decoration: underline;
 }
@@ -167,6 +175,15 @@ p {
 .t-BreadcrumbRegion-buttons {
     vertical-align: middle;
     padding: 1rem 1rem 0 0;
+}
+
+.apex-button-group input:checked+label {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 400;
+    background-color: #d0d0d0;
+    z-index: 1;
+    position: relative;
 }
 
 

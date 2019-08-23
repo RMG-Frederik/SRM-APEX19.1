@@ -111,7 +111,7 @@ Rmg.Srm.Utils.limitDatePicker = function(datepicker, availableDates, enabled) {
         $(datepicker).datepicker("option", "beforeShowDay", function(date) { return disableArrayOfDays(date); }).next('button').addClass('a-Button a-Button--calendar');
 }
 
-Rmg.Srm.Utils.highlightDatePicker = function(datepicker, availableDates, enabled) {
+Rmg.Srm.Utils.highlightDatePicker = function(datepicker, availableDates, enabled, pClass) {
     console.log('Picking dates');
 
     function disableArrayOfDays(d) {
@@ -123,9 +123,9 @@ Rmg.Srm.Utils.highlightDatePicker = function(datepicker, availableDates, enabled
         console.log(dmy);
         if ($.inArray(dmy, availableDates) != -1) {
             console.log('Date found');
-            return [true, "u-warning", null];
+            return [true, pClass, null];
         } else {
-            return [true, "u-info", null];
+            return [true, null, null];
         }
     }
 
@@ -138,9 +138,9 @@ Rmg.Srm.Utils.highlightDatePicker = function(datepicker, availableDates, enabled
         console.log(dmy);
         if ($.inArray(dmy, availableDates) == -1) {
             console.log('Date found');
-            return [true, "u-warning", null];
+            return [true, pClass, null];
         } else {
-            return [true, "u-info", null];
+            return [true, null, null];
         }
     }
     if (enabled)
@@ -156,7 +156,7 @@ Rmg.Srm.Utils.highlightDatePicker = function(datepicker, availableDates, enabled
  * @param {string} pOkLabel - The text on the ok button
  * @param {string} pCancelLabel - The text on the cancel button
  * @example
- *     Rmg.Srm.Utils.makeEntireRowLink('81')
+ *     
  */
 Rmg.Srm.Utils.customComfirm = function(pMessage, pCallback, pOkLabel, pCancelLabel) {
     var l_original_messages = { "APEX.DIALOG.OK": apex.lang.getMessage("APEX.DIALOG.OK"), "APEX.DIALOG.CANCEL": apex.lang.getMessage("APEX.DIALOG.CANCEL") };
@@ -168,4 +168,8 @@ Rmg.Srm.Utils.customComfirm = function(pMessage, pCallback, pOkLabel, pCancelLab
     //changes the button labels messages back to their original values
     apex.lang.addMessages({ "APEX.DIALOG.OK": l_original_messages["APEX.DIALOG.OK"] });
     apex.lang.addMessages({ "APEX.DIALOG.CANCEL": l_original_messages["APEX.DIALOG.CANCEL"] });
+}
+
+Rmg.Srm.Utils.showItem = function(pItem) {
+    apex.item(pItem).show();
 }
