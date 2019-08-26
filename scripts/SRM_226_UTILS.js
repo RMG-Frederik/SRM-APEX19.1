@@ -173,3 +173,24 @@ Rmg.Srm.Utils.customComfirm = function(pMessage, pCallback, pOkLabel, pCancelLab
 Rmg.Srm.Utils.showItem = function(pItem) {
     apex.item(pItem).show();
 }
+
+Rmg.Srm.Utils.validateArrayMails = function(pItem) {
+    var item = apex.item(pItem);
+    var mailString = item.getValue();
+    var mailArray = mailString.replace(/\s/g, '').split(";");
+    var isValid = true;
+    var regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var errors = "";
+
+    for (var i = 0; i < mailArray.length; i++) {
+        if (!mailArray[i] == "" || !regex.test(mailArray[i])) {
+            isValid = false;
+            errors += mailArray[i];
+        }
+    }
+    if (isValid) {
+        item.node.setCustomValidity(""); // valid 
+    } else {
+        item.node.setCustomValidity("Er zitten fouten in de lijst van mailadressen: " + errors);
+    }
+}
