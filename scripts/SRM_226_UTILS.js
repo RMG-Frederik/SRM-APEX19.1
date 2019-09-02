@@ -34,7 +34,7 @@ Rmg.Srm.Utils.showRegion = function(ID) {
      *     Rmg.Srm.Utils.goBackNoWarning()
      */
 Rmg.Srm.Utils.goBackNoWarning = function() {
-        window.history.back()
+        window.history.go(-1)
     }
     /**
      * Goes back to the previous browser page after pressing comfirmation with given message
@@ -181,11 +181,14 @@ Rmg.Srm.Utils.validateArrayMails = function(pItem) {
     var isValid = true;
     var regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var errors = "";
-
-    for (var i = 0; i < mailArray.length; i++) {
-        if (!mailArray[i] == "" || !regex.test(mailArray[i])) {
-            isValid = false;
-            errors += mailArray[i];
+    if (mailString == "") { isValid = true; } else {
+        for (var i = 0; i < mailArray.length; i++) {
+            if (mailArray[i] != "") {
+                if (!regex.test(mailArray[i])) {
+                    isValid = false;
+                    errors += mailArray[i];
+                }
+            }
         }
     }
     if (isValid) {
