@@ -2,11 +2,12 @@
     border-radius: 5px;
     padding: 6px;
     height: 30px;
-    background-color: #c3000a;
-    box-sizing: border-box;
     font-family: 'Roboto Regular', 'Roboto';
-    color: #fff;
+    color: #c3000a;
     text-align: left;
+    border: 1px solid #c3000a;
+    background-color: #ffffff;
+    box-sizing: border-box;
     line-height: 16px;
 }
 
