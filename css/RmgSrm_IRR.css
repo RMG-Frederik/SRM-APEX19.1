@@ -715,7 +715,8 @@ a.a-IRR-controlsLabel:focus {
 .a-IRR-table td {
     height: 4.8rem;
     border-left: 1px solid #f0f0f0;
-    border-top: 1px solid #f0f0f0
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #cdd0e1;
 }
 
 .a-IRR-table tr td:last-child {

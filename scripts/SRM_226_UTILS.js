@@ -54,25 +54,26 @@ Rmg.Srm.Utils.goBackWithComfirmation = function(message) {
      *     Rmg.Srm.Utils.makeEntireRowLink('81')
      */
 Rmg.Srm.Utils.makeEntireRowLink = function(target) {
-        $('a[href*="' + target + '"]').each(function(index) {
-            lnk = $(this).attr('href');
-            $(this).parent()
-                .parent('tr')
-                .attr('data-href', lnk)
-                .click(function() {
-                    window.location = $(this).attr('data-href');
-                })
-                .mouseover(function() {
-                    $(this).css('cursor', 'pointer');
-                })
-                .mouseleave(function() {
-                    $(this).css('cursor', 'default');
-                })
-        });
-    }
-    /**
-     * Confine DatePicker to selected dates
-     */
+    $('a[href*="' + target + '"]').each(function(index) {
+        lnk = $(this).attr('href');
+        $(this).parent()
+            .parent('tr')
+            .attr('data-href', lnk)
+            .click(function() {
+                window.location = $(this).attr('data-href');
+            })
+            .mouseover(function() {
+                $(this).css('cursor', 'pointer');
+            })
+            .mouseleave(function() {
+                $(this).css('cursor', 'default');
+            })
+    });
+}
+
+/**
+ * Confine DatePicker to selected dates
+ */
 Rmg.Srm.Utils.limitDatePicker = function(datepicker, availableDates, enabled) {
     console.log('Picking dates');
 

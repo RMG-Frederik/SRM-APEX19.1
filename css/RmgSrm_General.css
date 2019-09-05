@@ -115,8 +115,7 @@ p {
 .nodatafound {
     display: block;
     padding: 1px;
-    font-size: 1.2em;
-    font-family: 'Roboto Medium', 'Roboto';
+    font-family: 'Roboto ', 'Roboto';
     color: #111423;
 }
 
