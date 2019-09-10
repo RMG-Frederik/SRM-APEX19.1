@@ -71,6 +71,24 @@ Rmg.Srm.Utils.makeEntireRowLink = function(target) {
     });
 }
 
+Rmg.Srm.Utils.makeRowLinkExcept = function(target, noLink) {
+    $('a[href*="' + target + '"]').each(function(index) {
+        lnk = $(this).attr('href');
+        $(this).parent()
+            .siblings('td[headers !="' + noLink + '"]')
+            .attr('data-href', lnk)
+            .click(function() {
+                window.location = $(this).attr('data-href');
+            })
+            .mouseover(function() {
+                $(this).css('cursor', 'pointer');
+            })
+            .mouseleave(function() {
+                $(this).css('cursor', 'default');
+            })
+    });
+}
+
 /**
  * Confine DatePicker to selected dates
  */
