@@ -23,22 +23,22 @@ Rmg.Srm.Page95.initPageOnLoad = function() {
      * @example Rmg.Srm.Page95.setToewijzingswaardeVeld();
      **/
 Rmg.Srm.Page95.setToewijzingswaardeVeld = function() {
-    var vToewijzing = $v2('P95_TOEWIJZING_ID');
+    var vToewijzing = $v2('P96_TOEWIJZING_ID');
     switch (vToewijzing) {
         case '1':
-            apex.item("P95_TOEWIJZING_PERSOON").show();
-            apex.item("P95_TOEWIJZING_UNIT").show();
+            apex.item("P96_TOEW_PERSOON_ID").show();
+            apex.item("P96_TOEW_ORG_UNIT_ID").show();
             break;
         case '3':
-            apex.item("P95_TOEWIJZING_PERSOON").hide();
-            apex.item("P95_TOEWIJZING_UNIT").show();
+            apex.item("P96_TOEW_PERSOON_ID").hide();
+            apex.item("P96_TOEW_ORG_UNIT_ID").show();
             break;
         case '0':
-            apex.item("P95_TOEWIJZING_PERSOON").hide();
-            apex.item("P95_TOEWIJZING_UNIT").hide();
+            apex.item("P96_TOEW_PERSOON_ID").hide();
+            apex.item("P96_TOEW_ORG_UNIT_ID").hide();
             break;
         default:
-            apex.item("P95_TOEWIJZING_PERSOON").hide();
-            apex.item("P95_TOEWIJZING_UNIT").hide();
+            apex.item("P96_TOEW_PERSOON_ID").hide();
+            apex.item("P96_TOEW_ORG_UNIT_ID").hide();
     }
 }
