@@ -137,8 +137,8 @@ p {
     font-family: 'Roboto Regular', 'Roboto';
     color: #333333;
     text-align: left;
-    line-height: 3.6rem;
-    font-size: 2.8rem;
+    line-height: 2.6rem;
+    font-size: 1.8rem;
     margin: 0;
 }
 
@@ -174,6 +174,19 @@ p {
 .t-BreadcrumbRegion-buttons {
     vertical-align: middle;
     padding: 1rem 1rem 0 0;
+}
+
+@media (min-width: 641px) {
+    .t-Body-title:not(.t-Body-title-shrink) .t-BreadcrumbRegion--useBreadcrumbTitle:not(.t-BreadcrumbRegion--compactTitle) .t-Breadcrumb-item:last-child,
+    .t-BreadcrumbRegion-titleText {
+        margin: 0;
+        display: block;
+        font-size: 2.2rem;
+        line-height: 3.8rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: 500
+    }
 }
 
 .apex-button-group input:checked+label {
