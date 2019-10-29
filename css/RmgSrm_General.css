@@ -137,8 +137,8 @@ p {
     font-family: 'Roboto Regular', 'Roboto';
     color: #333333;
     text-align: left;
-    line-height: 2.6rem;
-    font-size: 1.8rem;
+    line-height: 2rem;
+    font-size: 1.6rem;
     margin: 0;
 }
 
@@ -173,7 +173,8 @@ p {
 
 .t-BreadcrumbRegion-buttons {
     vertical-align: middle;
-    padding: 1rem 1rem 0 0;
+    padding: .4rem .4rem 0 0;
+    line-height: 2rem;
 }
 
 @media (min-width: 641px) {
@@ -181,8 +182,8 @@ p {
     .t-BreadcrumbRegion-titleText {
         margin: 0;
         display: block;
-        font-size: 2.2rem;
-        line-height: 3.8rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
         text-overflow: ellipsis;
         overflow: hidden;
         font-weight: 500
@@ -428,6 +429,24 @@ ul.apex-rds .apex-rds-selected a {
     background-color: #ffffff;
     box-sizing: border-box;
     line-height: 16px;
+}
+
+.t-Alert--info .t-Alert-icon .t-Icon {
+    color: silver;
+}
+
+.t-Alert--wizard .t-Alert-body {
+    font-family: 'Roboto Medium', 'Roboto';
+    margin: 1.6rem 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.t-Alert--horizontal,
+.t-Alert--wizard {
+    border: 0px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0px 0px -0px rgba(0, 0, 0, 0);
 }
 
 

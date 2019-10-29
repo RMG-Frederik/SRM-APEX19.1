@@ -7,7 +7,7 @@
 }
 
 .a-IG-header {
-    padding: 0;
+    padding: 0px 0px 0;
     border-bottom: 0
 }
 
@@ -526,7 +526,7 @@ a.a-IG-controlsLabel:focus {
 }
 
 .a-IG-gridView .a-GV-footer {
-    border-left: 1px solid
+    border-left: 0px solid
 }
 
 .a-IG .a-IRR-sortWidget .a-IRR-sortWidget-actions {
