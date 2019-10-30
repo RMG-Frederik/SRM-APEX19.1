@@ -175,6 +175,7 @@ p {
     vertical-align: middle;
     padding: .4rem .4rem 0 0;
     line-height: 2rem;
+    display: flex;
 }
 
 @media (min-width: 641px) {
