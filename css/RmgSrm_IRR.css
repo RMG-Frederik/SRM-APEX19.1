@@ -825,9 +825,9 @@ a.a-IRR-controlsLabel:focus {
 }
 
 .a-IRR-noDataMsg {
-    margin: 12px;
+    margin: 1.2rem;
     text-align: center;
-    padding: 64px 0
+    padding: 0.4rem 0
 }
 
 .a-IRR-noDataMsg-icon .a-Icon {
