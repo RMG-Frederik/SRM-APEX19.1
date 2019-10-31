@@ -117,7 +117,7 @@ Rmg.Srm.Utils.limitDatePicker = function(datepicker, availableDates, enabled) {
         dmy += ("00" + (d.getMonth() + 1)).slice(-2) + "-";
         dmy += d.getFullYear();
         console.log(dmy);
-        if ($.inArray(dmy, availableDates) == -1) {
+        if ($.inArray(dmy, availableDates) != -1) {
             console.log('Date found');
             return [true, null, null];
         } else {
