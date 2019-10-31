@@ -1,6 +1,6 @@
 .select2-container,
 .select2-drop {
-    font-family: 'Roboto Regular', 'Roboto';
+    font-family: 'Roboto Regular', 'Roboto'!important;
     color: #333;
 }
 
@@ -339,6 +339,7 @@
     border-color: #e6e6e6!important;
     padding: 1.8rem .8rem 0px !important;
     flex-grow: 1!important;
+    font-size: 1.4rem!important;
 }
 
 
