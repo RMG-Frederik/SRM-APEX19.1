@@ -101,9 +101,7 @@ Rmg.Srm.Utils.limitDatePicker = function(datepicker, availableDates, enabled) {
         dmy += ("00" + d.getDate()).slice(-2) + "-";
         dmy += ("00" + (d.getMonth() + 1)).slice(-2) + "-";
         dmy += d.getFullYear();
-        apex.debug(dmy);
         if ($.inArray(dmy, availableDates) != -1) {
-            apex.debug('Date found');
             return [true, null, null];
         } else {
             return [false, null, null];
@@ -116,9 +114,7 @@ Rmg.Srm.Utils.limitDatePicker = function(datepicker, availableDates, enabled) {
         dmy += ("00" + d.getDate()).slice(-2) + "-";
         dmy += ("00" + (d.getMonth() + 1)).slice(-2) + "-";
         dmy += d.getFullYear();
-        apex.debug(dmy);
         if ($.inArray(dmy, availableDates) == -1) {
-            apex.debug('Date found');
             return [true, null, null];
         } else {
             return [false, null, null];
@@ -139,9 +135,7 @@ Rmg.Srm.Utils.highlightDatePicker = function(datepicker, availableDates, enabled
         dmy += ("00" + d.getDate()).slice(-2) + "-";
         dmy += ("00" + (d.getMonth() + 1)).slice(-2) + "-";
         dmy += d.getFullYear();
-        apex.debug(dmy);
         if ($.inArray(dmy, availableDates) != -1) {
-            apex.debug('Date found');
             return [true, pClass, null];
         } else {
             return [true, null, null];
@@ -154,9 +148,7 @@ Rmg.Srm.Utils.highlightDatePicker = function(datepicker, availableDates, enabled
         dmy += ("00" + d.getDate()).slice(-2) + "-";
         dmy += ("00" + (d.getMonth() + 1)).slice(-2) + "-";
         dmy += d.getFullYear();
-        apex.debug(dmy);
         if ($.inArray(dmy, availableDates) == -1) {
-            apex.debug('Date found');
             return [true, pClass, null];
         } else {
             return [true, null, null];
