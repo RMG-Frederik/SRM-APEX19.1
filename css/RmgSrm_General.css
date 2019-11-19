@@ -462,6 +462,23 @@ ul.apex-rds .apex-rds-selected a {
     line-height: 3.6rem;
 }
 
+.ui-dialog--notification .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.ui-dialog--notification .ui-button--hot {
+    background-color: #2e7dcb!important;
+}
+
+.ui-dialog--notification .ui-dialog-buttonpane {
+    border-width: 0px 0 0;
+}
+
+.ui-dialog--notification .ui-dialog-content {
+    min-height: auto!important;
+    padding: 0 32px 6px!important;
+}
+
 
 /* Put text instead of waiting indicator */
 
