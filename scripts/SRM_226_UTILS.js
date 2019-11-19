@@ -48,6 +48,20 @@ Rmg.Srm.Utils.goBackWithComfirmation = function(message) {
         }
     }
     /**
+     * Sets the size of a modal to a percentage of total screen, with a minimum
+     * @param {string} affectedClass - The class of the affected modal
+     * @param {string} percentage - The percentage of total screen size used
+     * @param {string} minH - The minimum heugth applied
+     * @param {string} minW - The minimum width applied
+     */
+Rmg.Srm.Utils.setModalSizePercentage = function(affectedClass, percentage, minH, minW) {
+        var w = window.innerWidth / 100 * percentage;
+        var h = window.innerHeight / 100 * percentage;
+        if (Number(h) > Number(minH)) h = minH;
+        if (Number(w) > Number(minW)) w = minW;
+        $(affectedClass).dialog({ height: h, width: w });
+    }
+    /**
      * Checks a row of an IR for a link and makes the entire row clickable
      * @param {string} target - The target page
      * @example

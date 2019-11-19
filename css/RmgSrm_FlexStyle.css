@@ -1,0 +1,42 @@
+.grow_twee {
+    flex-grow: 2;
+}
+
+.w_33 {
+    width: 33%;
+    box-sizing: border-box;
+    min-width: 25rem;
+}
+
+.w_40 {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.w_80 {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.w_20 {
+    width: 20%;
+    box-sizing: border-box;
+    min-width: 10rem;
+}
+
+.w_50 {
+    width: 50%;
+    box-sizing: border-box;
+    min-width: 9rem;
+}
+
+.w_70 {
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.w_30 {
+    width: 30%;
+    box-sizing: border-box;
+    border-left: 1px solid grey;
+}

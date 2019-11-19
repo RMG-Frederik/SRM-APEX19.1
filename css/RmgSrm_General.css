@@ -454,6 +454,14 @@ ul.apex-rds .apex-rds-selected a {
     box-shadow: 0 0px 0px -0px rgba(0, 0, 0, 0);
 }
 
+.t-Alert-body h2 {
+    font-family: Roboto-Regular, Roboto;
+    font-size: 1.4rem;
+    color: #111423;
+    text-align: left;
+    line-height: 3.6rem;
+}
+
 
 /* Put text instead of waiting indicator */
 
