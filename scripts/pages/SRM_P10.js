@@ -15,8 +15,8 @@ Rmg.Srm.Page10 = Rmg.Srm.Page10 || {}
      * @example Rmg.Srm.Page10.offerteVersturen();
      **/
 Rmg.Srm.Page10.offerteVersturen = function() {
-    var comfirmationString = voornaam + ", ben je zeker dat je de offerte wilt versturen ?";
-    Rmg.Srm.Utils.customComfirm(comfirmationString, function(okPressed) {
+    var confirmationString = voornaam + ", ben je zeker dat je de offerte wilt versturen ?";
+    Rmg.Srm.Utils.customConfirm(confirmationString, function(okPressed) {
         if (okPressed) {
             apex.server.process("TAAK_OVERNEMEN", {
                 x01: id,

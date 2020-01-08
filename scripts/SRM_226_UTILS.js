@@ -37,12 +37,12 @@ Rmg.Srm.Utils.goBackNoWarning = function() {
         window.history.go(-1)
     }
     /**
-     * Goes back to the previous browser page after pressing comfirmation with given message
-     * @param {string} message - The message inside the comfirmation
+     * Goes back to the previous browser page after pressing confirmation with given message
+     * @param {string} message - The message inside the confirmation
      * @example
-     *     Rmg.Srm.Utils.goBackWithComfirmation('Are you sure you want to go back ?')
+     *     Rmg.Srm.Utils.goBackWithConfirmation('Are you sure you want to go back ?')
      */
-Rmg.Srm.Utils.goBackWithComfirmation = function(message) {
+Rmg.Srm.Utils.goBackWithConfirmation = function(message) {
         if (confirm(message)) {
             window.history.back()
         }
@@ -175,7 +175,7 @@ Rmg.Srm.Utils.highlightDatePicker = function(datepicker, availableDates, enabled
 }
 
 /**
- * Shows an apex comfirmation message with custom labels for the buttons
+ * Shows an apex confirmation message with custom labels for the buttons
  * @param {string} pMessage - The message that needs to be displayed
  * @param {string} pCallback - Callback url
  * @param {string} pOkLabel - The text on the ok button
@@ -183,7 +183,7 @@ Rmg.Srm.Utils.highlightDatePicker = function(datepicker, availableDates, enabled
  * @example
  *     
  */
-Rmg.Srm.Utils.customComfirm = function(pMessage, pCallback, pOkLabel, pCancelLabel) {
+Rmg.Srm.Utils.customConfirm = function(pMessage, pCallback, pOkLabel, pCancelLabel) {
     var l_original_messages = { "APEX.DIALOG.OK": apex.lang.getMessage("APEX.DIALOG.OK"), "APEX.DIALOG.CANCEL": apex.lang.getMessage("APEX.DIALOG.CANCEL") };
     //change the button labels messages
     apex.lang.addMessages({ "APEX.DIALOG.OK": pOkLabel });
@@ -222,3 +222,4 @@ Rmg.Srm.Utils.validateArrayMails = function(pItem) {
         item.node.setCustomValidity("Er zitten fouten in de lijst van mailadressen: " + errors);
     }
 }
+nn
