@@ -241,4 +241,3 @@ Rmg.Srm.Utils.validateArrayMails = function(pItem) {
         item.node.setCustomValidity("Er zitten fouten in de lijst van mailadressen: " + errors);
     }
 }
-nn
