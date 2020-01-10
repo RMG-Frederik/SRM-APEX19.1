@@ -7,10 +7,10 @@ function alert(message) {
     apex.message.alert(message);
 }
 // Override the default confirm alert
-function confirm(message, callback) {
-    console.warn('Calling a simple confirm function not allowed in SRM. Please use apex.message.confirm');
-    apex.message.confirm(message, callback);
-}
+//function confirm(message, callback) {
+ //   console.warn('Calling a simple confirm function not allowed in SRM. Please use apex.message.confirm');
+ //   apex.message.confirm(message, callback);
+//}
 
 // change the class on all errors from warning to danger
 apex.message.showErrors = function() {
