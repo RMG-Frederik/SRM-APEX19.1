@@ -39,8 +39,12 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
      **/
 Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, voornaam, hasFu) {
     var state = "COMPLETED";
-    if (isCancelled) state = "CANCELLED";
     var confirmationString = "Bent u zeker dat u deze taak wenst te sluiten?";
+    if (isCancelled) {
+        state = "CANCELLED";
+        confirmationString = "Bent u zeker dat u deze taak wenst te annuleren?";
+    }
+    
     Rmg.Srm.Utils.customConfirm(confirmationString, function(okPressed) {
         if (okPressed) {
             apex.server.process("TAAK_SLUITEN", {
