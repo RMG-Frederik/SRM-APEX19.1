@@ -37,7 +37,7 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
      * @function taakSluiten
      * @example Rmg.Srm.Page81.taakSluiten(taakId,status,opmerking,voornaam);
      **/
-Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, voornaam) {
+Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, voornaam, hasFu) {
     var state = "COMPLETED";
     if (isCancelled) state = "CANCELLED";
     var confirmationString = "Bent u zeker dat u deze taak wenst te sluiten?";
@@ -54,12 +54,14 @@ Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, voornaam) {
                         var url = "f?p=" + $v('pFlowId') + ":TASK_OVERVIEW:" + $v('pInstance') + ":::::";
                         window.location.assign(url);
                     } else {
-                        Rmg.Srm.Utils.customConfirm("Wenst u een vervolgtaak aan te maken ?", function(okPressed) {
-                            if (okPressed) {
-                                var url = "f?p=" + $v('pFlowId') + ":TASK_CREATE:" + $v('pInstance') + ":::::";
-                                window.location.assign(url);
-                            }
-                        }, "Ja", "Nee");
+                        if (hasFu == 1) {
+                            Rmg.Srm.Utils.customConfirm("Wenst u een vervolgtaak aan te maken ?", function(okPressed) {
+                                if (okPressed) {
+                                    var url = "f?p=" + $v('pFlowId') + ":TASK_CREATE:" + $v('pInstance') + ":::::";
+                                    window.location.assign(url);
+                                }
+                            }, "Ja", "Nee");
+                        }
                     }
                 }
             });
