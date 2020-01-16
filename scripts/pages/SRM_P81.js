@@ -37,42 +37,55 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
      * @function taakSluiten
      * @example Rmg.Srm.Page81.taakSluiten(taakId,status,opmerking,voornaam);
      **/
-Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, voornaam, hasFu) {
-    var state = "COMPLETED";
-    var confirmationString = "Bent u zeker dat u deze taak wenst te sluiten?";
-    if (isCancelled) {
-        state = "CANCELLED";
-        confirmationString = "Bent u zeker dat u deze taak wenst te annuleren?";
+    Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, hasFu) {
+        var state = "COMPLETED";
+        var confirmationString = "Bent u zeker dat u deze taak wenst te sluiten?";
+        if (isCancelled) {
+            state = "CANCELLED";
+            confirmationString = "Bent u zeker dat u deze taak wenst te annuleren?";
+        } 
+        Rmg.Srm.Utils.customConfirm(
+            confirmationString,
+            function( okPressed ) { if( okPressed ) { Rmg.Srm.Page81.processClose(id,state,remark,isCancelled,hasFu);}},
+            "Ja",
+            "Nee"
+        );    
+    
+    }  
+    Rmg.Srm.Page81.processClose = function(id,state,remark,isCancelled,hasFu) 
+    {
+        apex.server.process(
+            "TAAK_SLUITEN",
+            {x01: id,x02: state,x03: remark},
+            {dataType: 'text',
+                success: function(pData) {
+                    if (isCancelled) apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80})); 
+                    else Rmg.Srm.Page81.executeClose(hasFu);                 
+                }
+            }   
+        )
     }
     
-    Rmg.Srm.Utils.customConfirm(confirmationString, function(okPressed) {
-        if (okPressed) {
-            apex.server.process("TAAK_SLUITEN", {
-                x01: id,
-                x02: state,
-                x03: remark
-            }, {
-                dataType: 'text',
-                success: function(pData) {
-                    if (isCancelled) {
-                        var url = apex.util.makeApplicationUrl({pageId:80});
-                        window.location.assign(url);
-                    } else {
-                        if (hasFu == 1) {
-                            Rmg.Srm.Utils.customConfirm("Wenst u een vervolgtaak aan te maken ?", function(okPressed) {
-                                if (okPressed) {
-                                    var url = apex.util.makeApplicationUrl({
-                                        pageId:82,
-                                        itemNames:['P82_IS_FU'],
-                                        itemValues:['1']
-                                    });
-                                    window.location.assign(url);
-                                }
-                            }, "Ja", "Nee");
-                        }
+    Rmg.Srm.Page81.executeClose = function(hasFu) 
+    {
+        if (hasFu == 1) {
+            Rmg.Srm.Utils.customConfirm(
+                "Wenst u een vervolgtaak aan te maken ?",
+                function(okPressed) {
+                    if (okPressed) {
+                        var url = apex.util.makeApplicationUrl({
+                            pageId:82,
+                            itemNames:['P82_IS_FU'],
+                            itemValues:['1']
+                        });
+                        apex.navigation.dialog.close( true,url);    
                     }
-                }
-            });
+                    else apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80}));
+                    
+                },
+                "Ja",
+                "Nee"
+            ); 
         }
-    }, "Ja", "Nee");
-}
+        else apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80})); 
+    }
