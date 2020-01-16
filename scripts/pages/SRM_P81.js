@@ -55,13 +55,17 @@ Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, voornaam, hasFu) 
                 dataType: 'text',
                 success: function(pData) {
                     if (isCancelled) {
-                        var url = "f?p=" + $v('pFlowId') + ":TASK_OVERVIEW:" + $v('pInstance') + ":::::";
+                        var url = apex.util.makeApplicationUrl({pageId:80});
                         window.location.assign(url);
                     } else {
                         if (hasFu == 1) {
                             Rmg.Srm.Utils.customConfirm("Wenst u een vervolgtaak aan te maken ?", function(okPressed) {
                                 if (okPressed) {
-                                    var url = "f?p=" + $v('pFlowId') + ":TASK_CREATE:" + $v('pInstance') + ":::::";
+                                    var url = apex.util.makeApplicationUrl({
+                                        pageId:82,
+                                        itemNames:['P82_IS_FU'],
+                                        itemValues:['1']
+                                    });
                                     window.location.assign(url);
                                 }
                             }, "Ja", "Nee");
