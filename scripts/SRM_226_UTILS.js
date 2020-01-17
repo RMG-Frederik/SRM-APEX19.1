@@ -28,14 +28,7 @@ Rmg.Srm.Utils.hideRegion = function(ID) {
 Rmg.Srm.Utils.showRegion = function(ID) {
         if (typeof ID !== 'undefined') $(ID).show()
     }
-    /**
-     * Go back to the browsers previous page
-     * @example
-     *     Rmg.Srm.Utils.goBackNoWarning()
-     */
-Rmg.Srm.Utils.goBackNoWarning = function() {
-        window.history.go(-1)
-    }
+
 /**
  * detect IE
  * returns version of IE or false, if browser is not Internet Explorer
@@ -84,8 +77,8 @@ Rmg.Srm.Utils.detectIE = function() {
 Rmg.Srm.Utils.setModalSizePercentage = function(affectedClass, percentage, minH, minW) {
         var w = window.innerWidth / 100 * percentage;
         var h = window.innerHeight / 100 * percentage;
-        if (Number(h) > Number(minH)) h = minH;
-        if (Number(w) > Number(minW)) w = minW;
+        if (Number(h) < Number(minH)) h = minH;
+        if (Number(w) < Number(minW)) w = minW;
         $(affectedClass).dialog({ height: h, width: w });
     }
     /**
