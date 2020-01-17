@@ -268,3 +268,13 @@ Rmg.Srm.Utils.validateArrayMails = function(pItem) {
         item.node.setCustomValidity("Er zitten fouten in de lijst van mailadressen: " + errors);
     }
 }
+
+Rmg.Srm.Utils.setDefaultEnterOnButton = function(pInputId,pButtonId) {
+    var input = document.getElementById(pInputId);
+    input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById(pButtonId).click();
+        }
+    });
+}
