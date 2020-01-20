@@ -67,6 +67,24 @@ Rmg.Srm.Utils.detectIE = function() {
     // other browser
     return false;       
     }
+
+/**
+* Sets the size of a modal to a percentage of total screen, with a minimum
+* @deprecated since version 1.3.5
+* @param {string} affectedClass - The class of the affected modal
+* @param {string} percentage - The percentage of total screen size used
+* @param {string} minH - The minimum heugth applied
+* @param {string} minW - The minimum width applied
+*/
+Rmg.Srm.Utils.setModalSizePercentage = function(affectedClass, percentage, minH, minW) {
+    console.warn("Calling a depricated method! Use PercWithMin function");
+    var w = window.innerWidth / 100 * percentage;
+    var h = window.innerHeight / 100 * percentage;
+    if (Number(h) < Number(minH)) h = minH;
+    if (Number(w) < Number(minW)) w = minW;
+    $(affectedClass).dialog({ height: h, width: w });
+}
+
 /**
 * Sets the size of a modal to a percentage of total screen, with a minimum
 * @param {string} affectedClass - The class of the affected modal
@@ -74,28 +92,31 @@ Rmg.Srm.Utils.detectIE = function() {
 * @param {string} minH - The minimum height applied
 * @param {string} minW - The minimum width applied
 */
-Rmg.Srm.Utils.setInModalSizePercWithMin = function(affectedClass, pW, pH, minH, minW) {
-        var w = window.innerWidth / 100 * pW;
-        var h = window.innerHeight / 100 * pH;
-        if (Number(h) < Number(minH)) h = minH;
-        if (Number(w) < Number(minW)) w = minW;
-        $(affectedClass).dialog({ height: h, width: w });
+Rmg.Srm.Utils.setModalSizePercWithMin = function(affectedClass, pW, pH, minH, minW) {
+    dialog$ = $(affectedClass);
+    var w = window.innerWidth / 100 * pW;
+    var h = window.innerHeight / 100 * pH;
+    if (Number(h) < Number(minH)) h = minH;
+    if (Number(w) < Number(minW)) w = minW;
+    dialog$.dialog({ height: h, width: w });
 }
-Rmg.Srm.Utils.setInModalSizePercWithMax = function(affectedClass, pW, pH, maxH, maxW) {
-        var w = window.innerWidth / 100 * pW;
-        var h = window.innerHeight / 100 * pH;
-        if (Number(h) > Number(maxH)) h = maxH;
-        if (Number(w) > Number(maxW)) w = maxW;
-        $(affectedClass).dialog({ height: h, width: w });
+Rmg.Srm.Utils.setModalSizePercWithMax = function(affectedClass, pW, pH, maxH, maxW) {
+    dialog$ = $(affectedClass);    
+    var w = window.innerWidth / 100 * pW;
+    var h = window.innerHeight / 100 * pH;
+    if (Number(h) > Number(maxH)) h = maxH;
+    if (Number(w) > Number(maxW)) w = maxW;
+    dialog$.dialog({ height: h, width: w });
 }
-Rmg.Srm.Utils.setInModalSizePercWithMinMax = function(affectedClass, pW, pH, minH, minW, maxH, maxW) {
-        var w = window.innerWidth / 100 * pW;
-        var h = window.innerHeight / 100 * pH;
-        if (Number(h) < Number(minH)) h = minH;
-        if (Number(w) < Number(minW)) w = minW;
-        if (Number(h) > Number(maxH)) h = maxH;
-        if (Number(w) > Number(maxW)) w = maxW;
-        $(affectedClass).dialog({ height: h, width: w });
+Rmg.Srm.Utils.setModalSizePercWithMinMax = function(affectedClass, pW, pH, minH, minW, maxH, maxW) {
+    dialog$ = $(affectedClass);    
+    var w = window.innerWidth / 100 * pW;
+    var h = window.innerHeight / 100 * pH;
+    if (Number(h) < Number(minH)) h = minH;
+    if (Number(w) < Number(minW)) w = minW;
+    if (Number(h) > Number(maxH)) h = maxH;
+    if (Number(w) > Number(maxW)) w = maxW;
+    dialog$.dialog({ height: h, width: w });
 }
     /**
      * Checks a row of an IR for a link and makes the entire row clickable
