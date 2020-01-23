@@ -9,18 +9,6 @@
     padding: 8px;
     background: #edeef4;
 }
-.zoek_cont {
-display:flex;
-flex-direction: row;
-justify-content: flex-end;
-}
-
-.zoek_region {
-display:flex;
-flex-wrap: wrap;
-flex-direction: row;
-align-items:center;
-}
 
 .a-IRR-button.a-IRR-button--pagination {
     border-radius: 1%; 
@@ -57,6 +45,34 @@ align-items:center;
   left: -100%;
   z-index: 1000;
 }
+
+.a-IRR-toolbar {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items:center;
+}
+    
+.a-IRR-buttons {
+    display:flex;
+    justify-content: flex-start;    
+    flex-grow:1;
+}
+    
+.a-IRR-controls {
+    display:flex;
+    justify-content: flex-end;    
+    flex-grow:1;
+}
+    
+.standpunt {
+    display:flex;
+    justify-content: flex-start;   
+    flex-direction: row-reverse;
+    flex-grow:20;   
+} 
 
 .ui-widget-content{
     z-index: 1000!important;

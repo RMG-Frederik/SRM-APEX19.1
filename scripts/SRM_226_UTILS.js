@@ -99,6 +99,7 @@ Rmg.Srm.Utils.setModalSizePercWithMin = function(affectedClass, pW, pH, minH, mi
     if (Number(h) < Number(minH)) h = minH;
     if (Number(w) < Number(minW)) w = minW;
     dialog$.dialog({ height: h, width: w });
+    
 }
 Rmg.Srm.Utils.setModalSizePercWithMax = function(affectedClass, pW, pH, maxH, maxW) {
     dialog$ = $(affectedClass);    

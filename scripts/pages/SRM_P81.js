@@ -25,9 +25,7 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
                     dataType: 'text',
                     success: function(pData) {
                         apex.item('P81_TAAK_STATE_CODE').setValue("In execution");
-                        apex.message.alert("Taak succesvol overgenomen");
-                        var url = "f?p=" + $v('pFlowId') + ":TASK_OVERVIEW:" + $v('pInstance') + ":::::";
-                        window.location.assign(url);
+                        apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80}));
                     }
                 });
             }
