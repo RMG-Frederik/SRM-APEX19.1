@@ -31,6 +31,7 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
             }
         }, "Ja", "Nee");
     }
+
     /**
      * @function taakSluiten
      * @example Rmg.Srm.Page81.taakSluiten(taakId,status,opmerking,voornaam);
@@ -70,16 +71,7 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
             Rmg.Srm.Utils.customConfirm(
                 "Wenst u een vervolgtaak aan te maken ?",
                 function(okPressed) {
-                    if (okPressed) {
-                        var url = apex.util.makeApplicationUrl({
-                            pageId:82,
-                            itemNames:['P82_IS_FU'],
-                            itemValues:['1']
-                        });
-                        apex.navigation.dialog.close( true,url);    
-                    }
-                    else apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80}));
-                    
+                    if (okPressed) goToPage82(); else apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80}));                  
                 },
                 "Ja",
                 "Nee"
