@@ -71,7 +71,7 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
             Rmg.Srm.Utils.customConfirm(
                 "Wenst u een vervolgtaak aan te maken ?",
                 function(okPressed) {
-                    if (okPressed) goToPage82(); else apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80}));                  
+                    if (okPressed) Rmg.Srm.Generated.goToModal82(); else apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80}));                  
                 },
                 "Ja",
                 "Nee"
