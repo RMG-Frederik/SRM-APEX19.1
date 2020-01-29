@@ -56,15 +56,16 @@
 }
     
 .a-IRR-buttons {
-    display:flex;
-    justify-content: flex-start;    
-    flex-grow:1;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
 }
     
 .a-IRR-controls {
-    display:flex;
-    justify-content: flex-end;    
-    flex-grow:1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: no-wrap;
+    flex-grow: 1;
 }
 
 .a-IRR-controlsContainer {
@@ -72,11 +73,29 @@
 }
     
 .standpunt {
-    display:flex;
-    justify-content: flex-start;   
-    flex-direction: row-reverse;
-    flex-grow:20;   
-} 
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.standpunt .t-Form-labelContainer {
+    display:none;
+}
+    
+.standpunt .col-4 {
+    width: 100%;
+    padding: 0px;
+}
+    
+.a-IRR-noDataMsg-icon .a-Icon {
+    display:none;
+}
+    
+.standpunt .t-Form-itemWrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: no-wrap;
+}
 
 .ui-widget-content{
     z-index: 1000!important;
