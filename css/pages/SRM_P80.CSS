@@ -71,6 +71,33 @@
 .a-IRR-controlsContainer {
     display: none;
 }
+
+.a-IRR-paginationWrap--top .a-IRR-button.a-IRR-button--pagination {
+    display: block; 
+}
+.a-IRR-paginationWrap--top {
+   min-height: 30px;
+   border-bottom: 0;
+   border-top: 0;
+   display: flex;
+   justify-content: flex-end;
+}
+.a-IRR-pagination-item .a-IRR-button.a-IRR-button--pagination {
+   border-radius: .4rem;
+   height: 3.2rem;
+   width: 3.2rem;
+   text-align: center;
+   vertical-align: top;
+   background-color: #fff;
+}
+
+.a-IRR-pagination-label {
+   display: block;
+   line-height: 30px;
+   font-size: 12px;
+   color: #707070;
+   padding: 0 8px;
+}
     
 .standpunt {
     display: flex;

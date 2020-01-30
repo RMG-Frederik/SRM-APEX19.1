@@ -86,6 +86,10 @@ justify-content: space-between;
     width: 100%;
     overflow: auto;
 }
+
+.t-Form--labelsAbove .t-Form-fieldContainer .t-Form-inputContainer, .t-Form-fieldContainer--stacked .t-Form-inputContainer {
+    padding: 0;
+}
 .daterangepicker {
   position: absolute;
   color: #393939;
