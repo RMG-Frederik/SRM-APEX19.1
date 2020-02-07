@@ -8,10 +8,6 @@
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125) inset;
 }
 
-.t-Button--hot {
-    font-weight: 400;
-}
-
 .t-Button:hover,
 .a-Button:hover {
     background-color: #00519a;
@@ -112,10 +108,17 @@
 }
 
 .a-Button--hot, .t-Button--hot:not(.t-Button--simple), body .ui-button.ui-button--hot, body .ui-state-default.ui-priority-primary {
-    background-color: #6cacff;
+    font-weight: normal;
+    font-family: 'Roboto Regular', 'Roboto';
+    background-color: #0000ff;
     color: #ffffff;
 }
 
 .a-Button--hot:hover, .t-Button--hot:not(.t-Button--simple):hover, body .ui-button.ui-button--hot:hover, body .ui-state-default.ui-priority-primary:hover, .a-Button--hot:not(:active):focus, .t-Button--hot:not(.t-Button--simple):not(:active):focus, body .ui-button.ui-button--hot:not(:active):focus, body .ui-state-default.ui-priority-primary:not(:active):focus {
-    background-color: #6cacff;
+    background-color: #0000ff;
+}
+
+.t-Button.is-disabled, .t-Button.is-disabled:active, .t-Button:disabled {
+    opacity: .2;
+    pointer-events: none;
 }

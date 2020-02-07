@@ -68,6 +68,11 @@ Rmg.Srm.Utils.detectIE = function() {
     return false;       
     }
 
+Rmg.Srm.Utils.setRegionSizeHeightPercentage = function(affectedClass, percentage) {
+        var h = window.innerHeight / 100 * percentage;
+        $(affectedClass).css({"height":h});
+    }
+
 /**
 * Sets the size of a modal to a percentage of total screen, with a minimum
 * @deprecated since version 1.3.5

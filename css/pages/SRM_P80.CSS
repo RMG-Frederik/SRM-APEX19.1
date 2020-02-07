@@ -91,6 +91,11 @@
    background-color: #fff;
 }
 
+.a-IRR-pagination-item .a-IRR-button.a-IRR-button--pagination:hover {
+    background-color: #2f3f4f;
+    color: #fff;
+}
+
 .a-IRR-pagination-label {
    display: block;
    line-height: 30px;

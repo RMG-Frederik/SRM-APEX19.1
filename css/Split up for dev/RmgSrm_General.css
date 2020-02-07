@@ -479,29 +479,73 @@ ul.apex-rds .apex-rds-selected a {
     padding: 0 32px 6px!important;
 }
 
+/* Homepage widget regions control */
 
-/* Put text instead of waiting indicator */
+.srm-home-widget  {
+    border-radius: 8px;
+    border: 1px solid #2e7dcb;
+    box-shadow: 1.5px 1.5px grey;
+    background-color: white;
+  }
+  
+  .srm-home-widget .t-Region-header {
+   display:flex;
+   border-radius: 10px;
+   background-color: white;
+   border-bottom: 0px solid rgba(0,0,0,.075)
+  }
+  
+  .srm-home-widget .t-Region-bodyWrap {
+   border-radius: 10px;
+   background-color: white;
+  }
+  
+  .srm-home-widget .t-Region-headerIcon {
+      float: left;
+      position: relative;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50px;
+      background-color: #2e7dcb;
+      color: #ffffff;
+  }
+  
+  .srm-home-widget .t-Region-headerIcon .t-Icon {
+      padding: 7px;
+      border-radius: 2px;
+  }
+  
+  .srm-home-widget .t-Region-body {
+      border-radius: 10px;
+      padding: 1.6rem;
+      background-color: white; 
+  }
+  
+  .srm-home-widget .t-Region-title{
+      display:flex;
+      justify-content:space-between;
+      width: 100%;
+  }
+  
+  .srm-home-widget .t-Region-headerItems--title {
+      flex-grow: 1;
+      text-align: left;
+      padding: 1.2rem;
+      display: flex;
+      align-items: stretch; 
+  }
+  
+  .srm-home-widget  .t-Report-cell {
+      height: 10px; 
+      box-sizing: border-box;
+      font-family: 'Roboto Regular','Roboto';
+      color: #696a72;
+      line-height: 10px; 
+      border: 0;
+      border-bottom: 0px solid #cdd0e1;
+  }
+  
+  .srm-home-widget .t-Button {
+  }
 
 
-/*
-.u-Processing {
-    content: "<div class=\"Name2\"></div>" !important;
-    height: 10% !important;
-    width: 30% !important;
-    cursor: text !important;
-    border-radius: 0% !important;
-    background-color: transparent !important;
-    z-index: 1000 !important;
-}
-
-.u-Processing:before {
-    content: 'Eventjes geduld...' !important;
-    height: 10% !important;
-    width: 50% !important;
-    cursor: text !important;
-    border-radius: 0% !important;
-    font-size: 200% !important;
-    background-color: White !important;
-    z-index: 1000 !important;
-}
-*/
