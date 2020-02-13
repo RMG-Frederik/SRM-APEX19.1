@@ -12,29 +12,19 @@ Rmg.Srm = Rmg.Srm || {}
 Rmg.Srm.Page81 = Rmg.Srm.Page81 || {}
     /**
      * @function taakOvernemen
-     * @example Rmg.Srm.Page81.taakOvernemen(taakId,persoonId,voornaam);
+     * @example Rmg.Srm.Page81.taakOvernemen(persoonId);
      **/
-Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
-        var confirmationString = voornaam + ", bent u zeker dat u de taak " + id + " wilt overnemen ?";
-        Rmg.Srm.Utils.customConfirm(confirmationString, function(okPressed) {
-            if (okPressed) {
-                apex.server.process("TAAK_OVERNEMEN", {
-                    x01: id,
-                    x02: persoonId
-                }, {
-                    dataType: 'text',
-                    success: function(pData) {
-                        apex.item('P81_TAAK_STATE_CODE').setValue("In execution");
-                        apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80}));
-                    }
-                });
-            }
-        }, "Ja", "Nee");
+    Rmg.Srm.Page81.taakOvernemen = function(persoonId) {
+        apex.jQuery("#P81_OWNER_PERSOON_ID").val(persoonId).trigger("change");
+       // apex.item('P81_OWNER_PERSOON_ID').setValue(persoonId);
+        apex.item('P81_TAAK_STATE_CODE').setValue("In execution");
+    
     }
+
 
     /**
      * @function taakSluiten
-     * @example Rmg.Srm.Page81.taakSluiten(taakId,status,opmerking,voornaam);
+     * @example Rmg.Srm.Page81.taakSluiten(taakId,status,opmerking);
      **/
     Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, hasFu) {
         var state = "COMPLETED";
@@ -45,21 +35,20 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
         } 
         Rmg.Srm.Utils.customConfirm(
             confirmationString,
-            function( okPressed ) { if( okPressed ) { Rmg.Srm.Page81.processClose(id,state,remark,isCancelled,hasFu);}},
+            function( okPressed ) { if( okPressed ) { Rmg.Srm.Page81.processClose(id,state,remark,hasFu);}},
             "Ja",
             "Nee"
         );    
     
     }  
-    Rmg.Srm.Page81.processClose = function(id,state,remark,isCancelled,hasFu) 
+    Rmg.Srm.Page81.processClose = function(id,state,remark,hasFu) 
     {
         apex.server.process(
             "TAAK_SLUITEN",
             {x01: id,x02: state,x03: remark},
             {dataType: 'text',
                 success: function(pData) {
-                    if (isCancelled) apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80})); 
-                    else Rmg.Srm.Page81.executeClose(hasFu);                 
+                     Rmg.Srm.Page81.executeClose(hasFu);                 
                 }
             }   
         )
@@ -71,11 +60,14 @@ Rmg.Srm.Page81.taakOvernemen = function(id, persoonId, voornaam) {
             Rmg.Srm.Utils.customConfirm(
                 "Wenst u een vervolgtaak aan te maken ?",
                 function(okPressed) {
-                    if (okPressed) Rmg.Srm.Generated.goToModal82(); else apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80}));                  
+                    if (okPressed) goToModal82(); 
+                    else location.reload();
+                    //else apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId: &AI_REFERAL_PAGE.}));                  
                 },
                 "Ja",
                 "Nee"
             ); 
         }
-        else apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId:80})); 
+        else location.reload();
+        //else apex.navigation.dialog.close( true,apex.util.makeApplicationUrl({pageId: &AI_REFERAL_PAGE.})); 
     }

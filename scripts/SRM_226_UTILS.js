@@ -68,8 +68,9 @@ Rmg.Srm.Utils.detectIE = function() {
     return false;       
     }
 
-Rmg.Srm.Utils.setRegionSizeHeightPercentage = function(affectedClass, percentage) {
+Rmg.Srm.Utils.setRegionSizeHeightPercentage = function(affectedClass, percentage,minH) {
         var h = window.innerHeight / 100 * percentage;
+        if (Number(h) < Number(minH)) h = minH;
         $(affectedClass).css({"height":h});
     }
 
