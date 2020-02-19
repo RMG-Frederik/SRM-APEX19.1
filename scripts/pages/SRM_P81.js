@@ -21,13 +21,15 @@ Rmg.Srm.Page81 = Rmg.Srm.Page81 || {}
     
     }
 
-
     /**
      * @function taakSluiten
      * @example Rmg.Srm.Page81.taakSluiten(taakId,status,opmerking);
      **/
     Rmg.Srm.Page81.taakSluiten = function(id, isCancelled, remark, hasFu) {
         var state = "COMPLETED";
+        // No follow up if already exist
+        var aantalVt = $('#vt_count').text();
+        if (aantalVt != 0) hasFu = 0;
         var confirmationString = "Bent u zeker dat u deze taak wenst te sluiten?";
         if (isCancelled) {
             state = "CANCELLED";

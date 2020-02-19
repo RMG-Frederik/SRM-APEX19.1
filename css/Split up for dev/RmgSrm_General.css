@@ -402,9 +402,9 @@ ul.apex-rds .apex-rds-selected a {
     padding: 6px;
     height: 30px;
     font-family: 'Roboto Regular', 'Roboto';
-    color: #ff9428;
+    color: #ffeed7;
     text-align: left;
-    border: 1px solid #ff9428;
+    border: 1px solid #ffeed7;
     background-color: #ffffff;
     box-sizing: border-box;
     line-height: 16px;
@@ -428,9 +428,9 @@ ul.apex-rds .apex-rds-selected a {
     padding: 6px;
     height: 30px;
     font-family: 'Roboto Regular', 'Roboto';
-    color: #86868d;
+    color: #1a75a0;
     text-align: left;
-    border: 1px solid #86868d;
+    border: 1px solid #1a75a0;
     background-color: #ffffff;
     box-sizing: border-box;
     line-height: 16px;
@@ -441,9 +441,9 @@ ul.apex-rds .apex-rds-selected a {
     padding: 6px;
     height: 30px;
     font-family: 'Roboto Regular', 'Roboto';
-    color: #1a75a0;
+    color: #86868d;
     text-align: left;
-    border: 1px solid #1a75a0;
+    border: 1px solid #86868d;
     background-color: #ffffff;
     box-sizing: border-box;
     line-height: 16px;
@@ -493,6 +493,7 @@ ul.apex-rds .apex-rds-selected a {
 }
 
 /* Homepage widget regions control */
+
 
 .srm-home-widget  {
     border-radius: 8px;
@@ -553,9 +554,10 @@ ul.apex-rds .apex-rds-selected a {
       box-sizing: border-box;
       font-family: 'Roboto Regular','Roboto';
       color: #696a72;
-      line-height: 10px; 
+      line-height: 15px; 
       border: 0;
       border-bottom: 0px solid #cdd0e1;
+      padding-top: 0px;
   }
   
   .srm-home-widget .t-Button {
