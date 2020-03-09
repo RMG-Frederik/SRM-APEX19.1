@@ -17,7 +17,7 @@ Rmg.Srm.Page81 = Rmg.Srm.Page81 || {}
     Rmg.Srm.Page81.taakOvernemen = function(persoonId) {
         apex.jQuery("#P81_OWNER_PERSOON_ID").val(persoonId).trigger("change");
        // apex.item('P81_OWNER_PERSOON_ID').setValue(persoonId);
-        apex.item('P81_TAAK_STATE_CODE').setValue("In execution");
+        apex.item('P81_TAAK_STATE_CODE').setValue("INEXECUTION");
     
     }
 
